@@ -1,0 +1,91 @@
+
+package eu.doppel_helix.jna.tlb.word8;
+
+import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
+import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
+import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
+import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.Variant.VARIANT;
+
+/**
+ * <p>uuid({00020930-0000-0000-C000-000000000046})</p>
+ */
+@ComInterface(iid="{00020930-0000-0000-C000-000000000046}")
+public interface Fields {
+    /**
+     * <p>id(0x3e8)</p>
+     */
+    @ComProperty(name = "Application", dispId = 0x3e8)
+    Application getApplication();
+            
+    /**
+     * <p>id(0x3e9)</p>
+     */
+    @ComProperty(name = "Creator", dispId = 0x3e9)
+    Integer getCreator();
+            
+    /**
+     * <p>id(0x3ea)</p>
+     */
+    @ComProperty(name = "Parent", dispId = 0x3ea)
+    com.sun.jna.platform.win32.COM.util.IDispatch getParent();
+            
+    /**
+     * <p>id(0x1)</p>
+     */
+    @ComProperty(name = "Count", dispId = 0x1)
+    Integer getCount();
+            
+    /**
+     * <p>id(0x2)</p>
+     */
+    @ComProperty(name = "Locked", dispId = 0x2)
+    Integer getLocked();
+            
+    /**
+     * <p>id(0x2)</p>
+     */
+    @ComProperty(name = "Locked", dispId = 0x2)
+    void setLocked(Integer param0);
+            
+    /**
+     * <p>id(0x0)</p>
+     */
+    @ComMethod(name = "Item", dispId = 0x0)
+    Field Item(Integer Index);
+            
+    /**
+     * <p>id(0x64)</p>
+     */
+    @ComMethod(name = "ToggleShowCodes", dispId = 0x64)
+    void ToggleShowCodes();
+            
+    /**
+     * <p>id(0x65)</p>
+     */
+    @ComMethod(name = "Update", dispId = 0x65)
+    Integer Update();
+            
+    /**
+     * <p>id(0x66)</p>
+     */
+    @ComMethod(name = "Unlink", dispId = 0x66)
+    void Unlink();
+            
+    /**
+     * <p>id(0x68)</p>
+     */
+    @ComMethod(name = "UpdateSource", dispId = 0x68)
+    void UpdateSource();
+            
+    /**
+     * <p>id(0x69)</p>
+     */
+    @ComMethod(name = "Add", dispId = 0x69)
+    Field Add(Range Range,
+            Object Type,
+            Object Text,
+            Object PreserveFormatting);
+            
+    
+}
