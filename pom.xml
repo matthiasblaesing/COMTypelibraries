@@ -50,5 +50,6 @@
         <module>excel1</module>
         <module>outlook9</module>
         <module>shdocvw1</module>
+        <module>wia1</module>
     </modules>
 </project>
