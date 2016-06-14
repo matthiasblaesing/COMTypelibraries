@@ -51,5 +51,6 @@
         <module>outlook9</module>
         <module>shdocvw1</module>
         <module>wia1</module>
+        <module>packaging</module>
     </modules>
 </project>
