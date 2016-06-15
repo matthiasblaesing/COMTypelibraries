@@ -5,56 +5,13 @@
     <parent>
         <groupId>eu.doppel_helix.jna.tlb</groupId>
         <artifactId>parent</artifactId>
-        <version>1.0</version>
+        <version>1.1</version>
     </parent>
     
     <artifactId>packaging</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <packaging>pom</packaging>
-    
-    <dependencies>
-        <dependency>
-            <groupId>eu.doppel_helix.jna.tlb</groupId>
-            <artifactId>stdole2</artifactId>
-            <version>2.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>eu.doppel_helix.jna.tlb</groupId>
-            <artifactId>office2</artifactId>
-            <version>2.7.0</version>
-        </dependency>
-        <dependency>
-            <groupId>eu.doppel_helix.jna.tlb</groupId>
-            <artifactId>vbide5</artifactId>
-            <version>5.3.0</version>
-        </dependency>
-        <dependency>
-            <groupId>eu.doppel_helix.jna.tlb</groupId>
-            <artifactId>word8</artifactId>
-            <version>8.6.0</version>
-        </dependency>
-        <dependency>
-            <groupId>eu.doppel_helix.jna.tlb</groupId>
-            <artifactId>excel1</artifactId>
-            <version>1.8.0</version>
-        </dependency>
-        <dependency>
-            <groupId>eu.doppel_helix.jna.tlb</groupId>
-            <artifactId>outlook9</artifactId>
-            <version>9.5.0</version>
-        </dependency>
-        <dependency>
-            <groupId>eu.doppel_helix.jna.tlb</groupId>
-            <artifactId>shdocvw1</artifactId>
-            <version>1.1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>eu.doppel_helix.jna.tlb</groupId>
-            <artifactId>wia1</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-    </dependencies>
-    
+
     <build>
         <plugins>
             <plugin>
@@ -63,38 +20,61 @@
                 <version>2.10</version>
                 <executions>
                     <execution>
-                        <id>copy-dependencies</id>
+                        <id>copy</id>
                         <phase>package</phase>
                         <goals>
-                            <goal>copy-dependencies</goal>
+                            <goal>copy</goal>
                         </goals>
                         <configuration>
-                            <includeScope>runtime</includeScope>
-                            <excludeTransitive>true</excludeTransitive>
-                            <addParentPoms>true</addParentPoms>
-                            <copyPom>true</copyPom>
-                            <outputDirectory>${project.build.directory}/binaries</outputDirectory>
-                            <overWriteReleases>false</overWriteReleases>
-                            <overWriteSnapshots>false</overWriteSnapshots>
-                            <overWriteIfNewer>true</overWriteIfNewer>
-                            <excludeArtifactIds>jna-platform</excludeArtifactIds>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>copy-sources</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>copy-dependencies</goal>
-                        </goals>
-                        <configuration>
-                            <classifier>sources</classifier>
-                            <includeScope>runtime</includeScope>
-                            <excludeTransitive>true</excludeTransitive>
-                            <outputDirectory>${project.build.directory}/binaries</outputDirectory>
-                            <overWriteReleases>false</overWriteReleases>
-                            <overWriteSnapshots>false</overWriteSnapshots>
-                            <overWriteIfNewer>true</overWriteIfNewer>
-                            <excludeArtifactIds>jna-platform</excludeArtifactIds>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>stdole2</artifactId>
+                                    <version>2.0.1</version>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>office2</artifactId>
+                                    <version>2.7.1</version>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>vbide5</artifactId>
+                                    <version>5.3.1</version>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>word8</artifactId>
+                                    <version>8.6.1</version>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>excel1</artifactId>
+                                    <version>1.8.1</version>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>outlook9</artifactId>
+                                    <version>9.5.1</version>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>shdocvw1</artifactId>
+                                    <version>1.1.1</version>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>wia1</artifactId>
+                                    <version>1.0.1</version>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>parent</artifactId>
+                                    <version>1.1</version>
+                                    <type>pom</type>
+                                </artifactItem>
+                            </artifactItems>
+                            <outputDirectory>${basedir}/target/binaries</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>

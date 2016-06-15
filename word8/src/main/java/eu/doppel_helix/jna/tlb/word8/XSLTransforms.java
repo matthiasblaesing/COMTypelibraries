@@ -5,13 +5,15 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
  * <p>uuid({C774F5EA-A539-4284-A1BE-30AEC052D899})</p>
  */
 @ComInterface(iid="{C774F5EA-A539-4284-A1BE-30AEC052D899}")
-public interface XSLTransforms {
+public interface XSLTransforms extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x2)</p>
      */

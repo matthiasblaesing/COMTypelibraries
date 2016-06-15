@@ -5,13 +5,15 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
  * <p>uuid({0C6FA8CA-E65F-4FC7-AB8F-20729EECBB14})</p>
  */
 @ComInterface(iid="{0C6FA8CA-E65F-4FC7-AB8F-20729EECBB14}")
-public interface ContentControlListEntry {
+public interface ContentControlListEntry extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x64)</p>
      */

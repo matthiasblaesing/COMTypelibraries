@@ -5,6 +5,8 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
@@ -13,7 +15,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
  * <p>uuid({EAB22AC1-30C1-11CF-A7EB-0000C05BAE0B})</p>
  */
 @ComInterface(iid="{EAB22AC1-30C1-11CF-A7EB-0000C05BAE0B}")
-public interface IWebBrowser {
+public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * Navigates to the previous item in the history list.
      *

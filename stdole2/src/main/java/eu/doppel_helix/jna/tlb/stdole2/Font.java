@@ -5,13 +5,15 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
  * <p>uuid({BEF6E003-A874-101A-8BBA-00AA00300CAB})</p>
  */
 @ComInterface(iid="{BEF6E003-A874-101A-8BBA-00AA00300CAB}")
-public interface Font {
+public interface Font extends IUnknown, IRawDispatchHandle, IDispatch {
     
     /**
      * <p>id(0x0)</p>

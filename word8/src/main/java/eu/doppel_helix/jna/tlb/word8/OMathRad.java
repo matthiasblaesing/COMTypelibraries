@@ -5,13 +5,15 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
  * <p>uuid({67A7EEC5-285D-4024-B071-BD6B33B88547})</p>
  */
 @ComInterface(iid="{67A7EEC5-285D-4024-B071-BD6B33B88547}")
-public interface OMathRad {
+public interface OMathRad extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x64)</p>
      */

@@ -5,13 +5,15 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
  * <p>uuid({ADD4EDF3-2F33-4734-9CE6-D476097C5ADA})</p>
  */
 @ComInterface(iid="{ADD4EDF3-2F33-4734-9CE6-D476097C5ADA}")
-public interface Rectangle {
+public interface Rectangle extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x3e8)</p>
      */

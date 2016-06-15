@@ -7,6 +7,7 @@ import com.sun.jna.platform.win32.COM.util.IComEventCallbackListener;
 import com.sun.jna.platform.win32.COM.util.IConnectionPoint;
 import com.sun.jna.platform.win32.COM.util.IUnknown;
 import com.sun.jna.platform.win32.COM.util.annotation.ComObject;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 
 /**
  * Internet Explorer Application with default integrity of Medium
@@ -16,13 +17,11 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComObject;
  * <p>source(DWebBrowserEvents)</p>
  * <p>interface(IWebBrowser2)</p>
  * <p>interface(IConnectionPoint)</p>
- * <p>interface(IUnknown)</p>
  */
 @ComObject(clsId = "{D5E8041D-920F-45E9-B8FB-B1DEB82C6E5E}")
-public interface InternetExplorerMedium extends
-    IWebBrowser2,
-    IConnectionPoint,
-    IUnknown
+public interface InternetExplorerMedium extends IUnknown
+    ,IWebBrowser2
+    ,IConnectionPoint
 {
 
 }

@@ -7,18 +7,17 @@ import com.sun.jna.platform.win32.COM.util.IComEventCallbackListener;
 import com.sun.jna.platform.win32.COM.util.IConnectionPoint;
 import com.sun.jna.platform.win32.COM.util.IUnknown;
 import com.sun.jna.platform.win32.COM.util.annotation.ComObject;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 
 /**
  * The ImageProcess object manages the filter chain. An ImageProcess object can be created using "WIA.ImageProcess" in a call to CreateObject.
  *
  * <p>uuid({BD0D38E4-74C8-4904-9B5A-269F8E9994E9})</p>
  * <p>interface(IImageProcess)</p>
- * <p>interface(IUnknown)</p>
  */
 @ComObject(clsId = "{BD0D38E4-74C8-4904-9B5A-269F8E9994E9}")
-public interface ImageProcess extends
-    IImageProcess,
-    IUnknown
+public interface ImageProcess extends IUnknown
+    ,IImageProcess
 {
 
 }

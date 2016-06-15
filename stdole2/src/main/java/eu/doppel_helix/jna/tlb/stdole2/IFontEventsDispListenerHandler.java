@@ -14,7 +14,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
  */
 public abstract class IFontEventsDispListenerHandler extends AbstractComEventCallbackListener implements IFontEventsDispListener {
     @Override
-    public void errorReceivingCallbackEvent(String string, Exception excptn) {
+    public void errorReceivingCallbackEvent(java.lang.String string, java.lang.Exception excptn) {
     }
 
     /**

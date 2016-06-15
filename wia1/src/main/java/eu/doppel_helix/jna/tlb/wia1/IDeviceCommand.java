@@ -5,13 +5,15 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
  * <p>uuid({7CF694C0-F589-451C-B56E-398B5855B05E})</p>
  */
 @ComInterface(iid="{7CF694C0-F589-451C-B56E-398B5855B05E}")
-public interface IDeviceCommand {
+public interface IDeviceCommand extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * Returns the commandID for this Command
      *

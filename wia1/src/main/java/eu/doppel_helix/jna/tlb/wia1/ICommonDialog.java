@@ -5,13 +5,15 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
  * <p>uuid({B4760F13-D9F3-4DF8-94B5-D225F86EE9A1})</p>
  */
 @ComInterface(iid="{B4760F13-D9F3-4DF8-94B5-D225F86EE9A1}")
-public interface ICommonDialog {
+public interface ICommonDialog extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * Launches the Windows Scanner and Camera Wizard and returns Nothing. Future versions may return a collection of ImageFile objects.
      *

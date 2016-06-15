@@ -5,6 +5,8 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
@@ -13,7 +15,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
  * <p>uuid({EAB22AC2-30C1-11CF-A7EB-0000C05BAE0B})</p>
  */
 @ComInterface(iid="{EAB22AC2-30C1-11CF-A7EB-0000C05BAE0B}")
-public interface DWebBrowserEvents {
+public interface DWebBrowserEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * Fired when a new hyperlink is being navigated to.
      *

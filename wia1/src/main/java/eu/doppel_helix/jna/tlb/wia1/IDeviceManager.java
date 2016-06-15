@@ -5,13 +5,15 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
  * <p>uuid({73856D9A-2720-487A-A584-21D5774E9D0F})</p>
  */
 @ComInterface(iid="{73856D9A-2720-487A-A584-21D5774E9D0F}")
-public interface IDeviceManager {
+public interface IDeviceManager extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * A collection of all imaging devices connected to this computer
      *

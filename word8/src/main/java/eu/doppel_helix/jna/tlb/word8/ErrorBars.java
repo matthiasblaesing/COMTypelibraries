@@ -5,13 +5,15 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
  * <p>uuid({194F8476-B79D-4572-A609-294207DE77C1})</p>
  */
 @ComInterface(iid="{194F8476-B79D-4572-A609-294207DE77C1}")
-public interface ErrorBars {
+public interface ErrorBars extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x96)</p>
      */

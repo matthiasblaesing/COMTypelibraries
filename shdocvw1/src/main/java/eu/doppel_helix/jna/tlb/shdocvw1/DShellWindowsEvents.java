@@ -5,6 +5,8 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
@@ -13,7 +15,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
  * <p>uuid({FE4106E0-399A-11D0-A48C-00A0C90A8F39})</p>
  */
 @ComInterface(iid="{FE4106E0-399A-11D0-A48C-00A0C90A8F39}")
-public interface DShellWindowsEvents {
+public interface DShellWindowsEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * A new window was registered.
      *

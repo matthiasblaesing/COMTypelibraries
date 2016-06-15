@@ -5,6 +5,8 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
@@ -13,7 +15,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
  * <p>uuid({60E567C8-9573-4AB2-A264-637C6C161CB1})</p>
  */
 @ComInterface(iid="{60E567C8-9573-4AB2-A264-637C6C161CB1}")
-public interface IShellUIHelper7 {
+public interface IShellUIHelper7 extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1)</p>
      */

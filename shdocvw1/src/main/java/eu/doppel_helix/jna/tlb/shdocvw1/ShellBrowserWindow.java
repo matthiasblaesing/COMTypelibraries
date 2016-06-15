@@ -7,6 +7,7 @@ import com.sun.jna.platform.win32.COM.util.IComEventCallbackListener;
 import com.sun.jna.platform.win32.COM.util.IConnectionPoint;
 import com.sun.jna.platform.win32.COM.util.IUnknown;
 import com.sun.jna.platform.win32.COM.util.annotation.ComObject;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 
 /**
  * Shell Browser Window.
@@ -16,13 +17,11 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComObject;
  * <p>source(DWebBrowserEvents)</p>
  * <p>interface(IWebBrowser2)</p>
  * <p>interface(IConnectionPoint)</p>
- * <p>interface(IUnknown)</p>
  */
 @ComObject(clsId = "{C08AFD90-F2A1-11D1-8455-00A0C91F3880}")
-public interface ShellBrowserWindow extends
-    IWebBrowser2,
-    IConnectionPoint,
-    IUnknown
+public interface ShellBrowserWindow extends IUnknown
+    ,IWebBrowser2
+    ,IConnectionPoint
 {
 
 }

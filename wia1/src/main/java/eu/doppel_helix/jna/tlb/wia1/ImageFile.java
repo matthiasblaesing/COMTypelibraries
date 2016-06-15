@@ -7,18 +7,17 @@ import com.sun.jna.platform.win32.COM.util.IComEventCallbackListener;
 import com.sun.jna.platform.win32.COM.util.IConnectionPoint;
 import com.sun.jna.platform.win32.COM.util.IUnknown;
 import com.sun.jna.platform.win32.COM.util.annotation.ComObject;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 
 /**
  * The ImageFile object is a container for images transferred to your computer when you call Transfer or ShowTransfer. It also supports image files through LoadFile. An ImageFile object can be created using "WIA.ImageFile" in a call to CreateObject.
  *
  * <p>uuid({A2E6DDA0-06EF-4DF3-B7BD-5AA224BB06E8})</p>
  * <p>interface(IImageFile)</p>
- * <p>interface(IUnknown)</p>
  */
 @ComObject(clsId = "{A2E6DDA0-06EF-4DF3-B7BD-5AA224BB06E8}")
-public interface ImageFile extends
-    IImageFile,
-    IUnknown
+public interface ImageFile extends IUnknown
+    ,IImageFile
 {
 
 }

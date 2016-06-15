@@ -5,6 +5,8 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
@@ -13,7 +15,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
  * <p>uuid({85CB6900-4D95-11CF-960C-0080C7F4EE85})</p>
  */
 @ComInterface(iid="{85CB6900-4D95-11CF-960C-0080C7F4EE85}")
-public interface IShellWindows {
+public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * Get count of open Shell windows
      *

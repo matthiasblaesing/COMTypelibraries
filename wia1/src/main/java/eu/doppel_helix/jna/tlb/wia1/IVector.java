@@ -5,13 +5,15 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
  * <p>uuid({696F2367-6619-49BD-BA96-904DC2609990})</p>
  */
 @ComInterface(iid="{696F2367-6619-49BD-BA96-904DC2609990}")
-public interface IVector {
+public interface IVector extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * Returns/Sets the specified item in the vector by position
      *

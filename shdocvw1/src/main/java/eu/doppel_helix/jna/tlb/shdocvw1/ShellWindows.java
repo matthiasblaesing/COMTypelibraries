@@ -7,6 +7,7 @@ import com.sun.jna.platform.win32.COM.util.IComEventCallbackListener;
 import com.sun.jna.platform.win32.COM.util.IConnectionPoint;
 import com.sun.jna.platform.win32.COM.util.IUnknown;
 import com.sun.jna.platform.win32.COM.util.annotation.ComObject;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 
 /**
  * ShellDispatch Load in Shell Context
@@ -15,13 +16,11 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComObject;
  * <p>source(DShellWindowsEvents)</p>
  * <p>interface(IShellWindows)</p>
  * <p>interface(IConnectionPoint)</p>
- * <p>interface(IUnknown)</p>
  */
 @ComObject(clsId = "{9BA05972-F6A8-11CF-A442-00A0C90A8F39}")
-public interface ShellWindows extends
-    IShellWindows,
-    IConnectionPoint,
-    IUnknown
+public interface ShellWindows extends IUnknown
+    ,IShellWindows
+    ,IConnectionPoint
 {
 
 }

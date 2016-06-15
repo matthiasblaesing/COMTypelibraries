@@ -5,13 +5,15 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
  * <p>uuid({80D0880A-BB10-4722-82D1-07DC8DA157E2})</p>
  */
 @ComInterface(iid="{80D0880A-BB10-4722-82D1-07DC8DA157E2}")
-public interface IDeviceEvent {
+public interface IDeviceEvent extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * Returns the EventID for this Event
      *

@@ -5,13 +5,15 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
  * <p>uuid({F4243B65-3F63-4D99-93CD-86B6D62C5EB2})</p>
  */
 @ComInterface(iid="{F4243B65-3F63-4D99-93CD-86B6D62C5EB2}")
-public interface IImageFile {
+public interface IImageFile extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * Returns the FormatID for this file type
      *

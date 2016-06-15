@@ -7,6 +7,7 @@ import com.sun.jna.platform.win32.COM.util.IComEventCallbackListener;
 import com.sun.jna.platform.win32.COM.util.IConnectionPoint;
 import com.sun.jna.platform.win32.COM.util.IUnknown;
 import com.sun.jna.platform.win32.COM.util.annotation.ComObject;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 
 /**
  * <p>uuid({0006F03A-0000-0000-C000-000000000046})</p>
@@ -15,13 +16,11 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComObject;
  * <p>source(ApplicationEvents_10)</p>
  * <p>interface(_Application)</p>
  * <p>interface(IConnectionPoint)</p>
- * <p>interface(IUnknown)</p>
  */
 @ComObject(clsId = "{0006F03A-0000-0000-C000-000000000046}")
-public interface Application extends
-    _Application,
-    IConnectionPoint,
-    IUnknown
+public interface Application extends IUnknown
+    ,_Application
+    ,IConnectionPoint
 {
 
 }

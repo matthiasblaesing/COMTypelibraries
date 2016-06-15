@@ -12,7 +12,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
  */
 public abstract class IMsoEnvelopeVBEventsListenerHandler extends AbstractComEventCallbackListener implements IMsoEnvelopeVBEventsListener {
     @Override
-    public void errorReceivingCallbackEvent(String string, Exception excptn) {
+    public void errorReceivingCallbackEvent(java.lang.String string, java.lang.Exception excptn) {
     }
 
     /**

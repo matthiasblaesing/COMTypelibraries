@@ -7,16 +7,15 @@ import com.sun.jna.platform.win32.COM.util.IComEventCallbackListener;
 import com.sun.jna.platform.win32.COM.util.IConnectionPoint;
 import com.sun.jna.platform.win32.COM.util.IUnknown;
 import com.sun.jna.platform.win32.COM.util.annotation.ComObject;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 
 /**
  * <p>uuid({000610E4-0000-0000-C000-000000000046})</p>
  * <p>interface(_Categories)</p>
- * <p>interface(IUnknown)</p>
  */
 @ComObject(clsId = "{000610E4-0000-0000-C000-000000000046}")
-public interface Categories extends
-    _Categories,
-    IUnknown
+public interface Categories extends IUnknown
+    ,_Categories
 {
 
 }

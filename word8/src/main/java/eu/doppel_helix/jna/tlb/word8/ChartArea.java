@@ -5,13 +5,15 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
  * <p>uuid({C75AD98A-74E9-49FE-8BF1-544839CC08A5})</p>
  */
 @ComInterface(iid="{C75AD98A-74E9-49FE-8BF1-544839CC08A5}")
-public interface ChartArea {
+public interface ChartArea extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x6e)</p>
      */

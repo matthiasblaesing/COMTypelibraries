@@ -7,19 +7,18 @@ import com.sun.jna.platform.win32.COM.util.IComEventCallbackListener;
 import com.sun.jna.platform.win32.COM.util.IConnectionPoint;
 import com.sun.jna.platform.win32.COM.util.IUnknown;
 import com.sun.jna.platform.win32.COM.util.annotation.ComObject;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 
 /**
  * <p>uuid({00063056-0000-0000-C000-000000000046})</p>
  * <p>source(OutlookBarGroupsEvents)</p>
  * <p>interface(_OutlookBarGroups)</p>
  * <p>interface(IConnectionPoint)</p>
- * <p>interface(IUnknown)</p>
  */
 @ComObject(clsId = "{00063056-0000-0000-C000-000000000046}")
-public interface OutlookBarGroups extends
-    _OutlookBarGroups,
-    IConnectionPoint,
-    IUnknown
+public interface OutlookBarGroups extends IUnknown
+    ,_OutlookBarGroups
+    ,IConnectionPoint
 {
 
 }

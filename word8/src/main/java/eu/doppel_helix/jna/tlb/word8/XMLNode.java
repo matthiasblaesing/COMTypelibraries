@@ -5,13 +5,15 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
  * <p>uuid({09760240-0B89-49F7-A79D-479F24723F56})</p>
  */
 @ComInterface(iid="{09760240-0B89-49F7-A79D-479F24723F56}")
-public interface XMLNode {
+public interface XMLNode extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x0)</p>
      */

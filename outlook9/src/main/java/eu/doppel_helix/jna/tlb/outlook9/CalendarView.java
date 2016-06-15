@@ -7,16 +7,15 @@ import com.sun.jna.platform.win32.COM.util.IComEventCallbackListener;
 import com.sun.jna.platform.win32.COM.util.IConnectionPoint;
 import com.sun.jna.platform.win32.COM.util.IUnknown;
 import com.sun.jna.platform.win32.COM.util.annotation.ComObject;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 
 /**
  * <p>uuid({00062003-0000-0000-C000-000000000046})</p>
  * <p>interface(_CalendarView)</p>
- * <p>interface(IUnknown)</p>
  */
 @ComObject(clsId = "{00062003-0000-0000-C000-000000000046}")
-public interface CalendarView extends
-    _CalendarView,
-    IUnknown
+public interface CalendarView extends IUnknown
+    ,_CalendarView
 {
 
 }

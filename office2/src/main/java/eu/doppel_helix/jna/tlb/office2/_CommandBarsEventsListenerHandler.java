@@ -12,7 +12,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
  */
 public abstract class _CommandBarsEventsListenerHandler extends AbstractComEventCallbackListener implements _CommandBarsEventsListener {
     @Override
-    public void errorReceivingCallbackEvent(String string, Exception excptn) {
+    public void errorReceivingCallbackEvent(java.lang.String string, java.lang.Exception excptn) {
     }
 
     /**

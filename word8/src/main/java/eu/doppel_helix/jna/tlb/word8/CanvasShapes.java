@@ -5,13 +5,15 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
  * <p>uuid({396F9073-F9FD-11D3-8EA0-0050049A1A01})</p>
  */
 @ComInterface(iid="{396F9073-F9FD-11D3-8EA0-0050049A1A01}")
-public interface CanvasShapes {
+public interface CanvasShapes extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1f40)</p>
      */

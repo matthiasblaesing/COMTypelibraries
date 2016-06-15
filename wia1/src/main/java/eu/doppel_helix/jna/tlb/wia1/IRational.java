@@ -5,13 +5,15 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
  * <p>uuid({3BF1B24A-01A5-4AA3-91F9-25A60B50E49B})</p>
  */
 @ComInterface(iid="{3BF1B24A-01A5-4AA3-91F9-25A60B50E49B}")
-public interface IRational {
+public interface IRational extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * Returns the Rational Value as a Double
      *

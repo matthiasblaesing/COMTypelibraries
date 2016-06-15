@@ -5,6 +5,8 @@ import com.sun.jna.platform.win32.COM.util.annotation.ComInterface;
 import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import com.sun.jna.platform.win32.COM.util.annotation.ComProperty;
 import com.sun.jna.platform.win32.COM.util.IDispatch;
+import com.sun.jna.platform.win32.COM.util.IUnknown;
+import com.sun.jna.platform.win32.COM.util.IRawDispatchHandle;
 import com.sun.jna.platform.win32.Variant.VARIANT;
 
 /**
@@ -13,7 +15,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
  * <p>uuid({E572D3C9-37BE-4AE2-825D-D521763E3108})</p>
  */
 @ComInterface(iid="{E572D3C9-37BE-4AE2-825D-D521763E3108}")
-public interface IShellNameSpace {
+public interface IShellNameSpace extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * method MoveSelectionUp
      *
