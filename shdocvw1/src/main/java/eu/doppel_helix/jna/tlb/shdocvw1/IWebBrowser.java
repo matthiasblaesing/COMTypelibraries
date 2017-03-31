@@ -20,6 +20,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Navigates to the previous item in the history list.
      *
      * <p>id(0x64)</p>
+     * <p>vtableId(7)</p>
      */
     @ComMethod(name = "GoBack", dispId = 0x64)
     void GoBack();
@@ -28,6 +29,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Navigates to the next item in the history list.
      *
      * <p>id(0x65)</p>
+     * <p>vtableId(8)</p>
      */
     @ComMethod(name = "GoForward", dispId = 0x65)
     void GoForward();
@@ -36,6 +38,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Go home/start page.
      *
      * <p>id(0x66)</p>
+     * <p>vtableId(9)</p>
      */
     @ComMethod(name = "GoHome", dispId = 0x66)
     void GoHome();
@@ -44,6 +47,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Go Search Page.
      *
      * <p>id(0x67)</p>
+     * <p>vtableId(10)</p>
      */
     @ComMethod(name = "GoSearch", dispId = 0x67)
     void GoSearch();
@@ -52,6 +56,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Navigates to a URL or file.
      *
      * <p>id(0x68)</p>
+     * <p>vtableId(11)</p>
      */
     @ComMethod(name = "Navigate", dispId = 0x68)
     void Navigate(String URL,
@@ -64,6 +69,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Refresh the currently viewed page.
      *
      * <p>id(0xfffffdda)</p>
+     * <p>vtableId(12)</p>
      */
     @ComMethod(name = "Refresh", dispId = 0xfffffdda)
     void Refresh();
@@ -72,6 +78,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Refresh the currently viewed page.
      *
      * <p>id(0x69)</p>
+     * <p>vtableId(13)</p>
      */
     @ComMethod(name = "Refresh2", dispId = 0x69)
     void Refresh2(Object Level);
@@ -80,6 +87,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Stops opening a file.
      *
      * <p>id(0x6a)</p>
+     * <p>vtableId(14)</p>
      */
     @ComMethod(name = "Stop", dispId = 0x6a)
     void Stop();
@@ -88,6 +96,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the application automation object if accessible, this automation object otherwise..
      *
      * <p>id(0xc8)</p>
+     * <p>vtableId(15)</p>
      */
     @ComProperty(name = "Application", dispId = 0xc8)
     com.sun.jna.platform.win32.COM.util.IDispatch getApplication();
@@ -96,6 +105,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the automation object of the container/parent if one exists or this automation object.
      *
      * <p>id(0xc9)</p>
+     * <p>vtableId(16)</p>
      */
     @ComProperty(name = "Parent", dispId = 0xc9)
     com.sun.jna.platform.win32.COM.util.IDispatch getParent();
@@ -104,6 +114,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the container/parent automation object, if any.
      *
      * <p>id(0xca)</p>
+     * <p>vtableId(17)</p>
      */
     @ComProperty(name = "Container", dispId = 0xca)
     com.sun.jna.platform.win32.COM.util.IDispatch getContainer();
@@ -112,6 +123,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the active Document automation object, if any.
      *
      * <p>id(0xcb)</p>
+     * <p>vtableId(18)</p>
      */
     @ComProperty(name = "Document", dispId = 0xcb)
     com.sun.jna.platform.win32.COM.util.IDispatch getDocument();
@@ -120,6 +132,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns True if this is the top level object.
      *
      * <p>id(0xcc)</p>
+     * <p>vtableId(19)</p>
      */
     @ComProperty(name = "TopLevelContainer", dispId = 0xcc)
     Boolean getTopLevelContainer();
@@ -128,6 +141,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the type of the contained document object.
      *
      * <p>id(0xcd)</p>
+     * <p>vtableId(20)</p>
      */
     @ComProperty(name = "Type", dispId = 0xcd)
     String getType();
@@ -136,6 +150,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * The horizontal position (pixels) of the frame window relative to the screen/container.
      *
      * <p>id(0xce)</p>
+     * <p>vtableId(21)</p>
      */
     @ComProperty(name = "Left", dispId = 0xce)
     Integer getLeft();
@@ -144,6 +159,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * The horizontal position (pixels) of the frame window relative to the screen/container.
      *
      * <p>id(0xce)</p>
+     * <p>vtableId(22)</p>
      */
     @ComProperty(name = "Left", dispId = 0xce)
     void setLeft(Integer param0);
@@ -152,6 +168,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * The vertical position (pixels) of the frame window relative to the screen/container.
      *
      * <p>id(0xcf)</p>
+     * <p>vtableId(23)</p>
      */
     @ComProperty(name = "Top", dispId = 0xcf)
     Integer getTop();
@@ -160,6 +177,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * The vertical position (pixels) of the frame window relative to the screen/container.
      *
      * <p>id(0xcf)</p>
+     * <p>vtableId(24)</p>
      */
     @ComProperty(name = "Top", dispId = 0xcf)
     void setTop(Integer param0);
@@ -168,6 +186,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * The horizontal dimension (pixels) of the frame window/object.
      *
      * <p>id(0xd0)</p>
+     * <p>vtableId(25)</p>
      */
     @ComProperty(name = "Width", dispId = 0xd0)
     Integer getWidth();
@@ -176,6 +195,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * The horizontal dimension (pixels) of the frame window/object.
      *
      * <p>id(0xd0)</p>
+     * <p>vtableId(26)</p>
      */
     @ComProperty(name = "Width", dispId = 0xd0)
     void setWidth(Integer param0);
@@ -184,6 +204,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * The vertical dimension (pixels) of the frame window/object.
      *
      * <p>id(0xd1)</p>
+     * <p>vtableId(27)</p>
      */
     @ComProperty(name = "Height", dispId = 0xd1)
     Integer getHeight();
@@ -192,6 +213,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * The vertical dimension (pixels) of the frame window/object.
      *
      * <p>id(0xd1)</p>
+     * <p>vtableId(28)</p>
      */
     @ComProperty(name = "Height", dispId = 0xd1)
     void setHeight(Integer param0);
@@ -200,6 +222,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Gets the short (UI-friendly) name of the URL/file currently viewed.
      *
      * <p>id(0xd2)</p>
+     * <p>vtableId(29)</p>
      */
     @ComProperty(name = "LocationName", dispId = 0xd2)
     String getLocationName();
@@ -208,6 +231,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Gets the full URL/path currently viewed.
      *
      * <p>id(0xd3)</p>
+     * <p>vtableId(30)</p>
      */
     @ComProperty(name = "LocationURL", dispId = 0xd3)
     String getLocationURL();
@@ -216,6 +240,7 @@ public interface IWebBrowser extends IUnknown, IRawDispatchHandle, IDispatch {
      * Query to see if something is still in progress.
      *
      * <p>id(0xd4)</p>
+     * <p>vtableId(31)</p>
      */
     @ComProperty(name = "Busy", dispId = 0xd4)
     Boolean getBusy();

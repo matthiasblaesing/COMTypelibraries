@@ -20,6 +20,7 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      * Get count of open Shell windows
      *
      * <p>id(0x60020000)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Count", dispId = 0x60020000)
     Integer getCount();
@@ -28,6 +29,7 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      * Return the shell window for the given index
      *
      * <p>id(0x0)</p>
+     * <p>vtableId(8)</p>
      */
     @ComMethod(name = "Item", dispId = 0x0)
     com.sun.jna.platform.win32.COM.util.IDispatch Item(Object index);
@@ -36,6 +38,7 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      * Register a window with the list
      *
      * <p>id(0x60020003)</p>
+     * <p>vtableId(10)</p>
      */
     @ComMethod(name = "Register", dispId = 0x60020003)
     void Register(com.sun.jna.platform.win32.COM.util.IDispatch pid,
@@ -47,6 +50,7 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      * Register a pending open with the list
      *
      * <p>id(0x60020004)</p>
+     * <p>vtableId(11)</p>
      */
     @ComMethod(name = "RegisterPending", dispId = 0x60020004)
     void RegisterPending(Integer lThreadId,
@@ -59,6 +63,7 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      * Remove a window from the list
      *
      * <p>id(0x60020005)</p>
+     * <p>vtableId(12)</p>
      */
     @ComMethod(name = "Revoke", dispId = 0x60020005)
     void Revoke(Integer lCookie);
@@ -67,6 +72,7 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      * Notifies the new location
      *
      * <p>id(0x60020006)</p>
+     * <p>vtableId(13)</p>
      */
     @ComMethod(name = "OnNavigate", dispId = 0x60020006)
     void OnNavigate(Integer lCookie,
@@ -76,6 +82,7 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      * Notifies the activation
      *
      * <p>id(0x60020007)</p>
+     * <p>vtableId(14)</p>
      */
     @ComMethod(name = "OnActivated", dispId = 0x60020007)
     void OnActivated(Integer lCookie,
@@ -85,6 +92,7 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      * Find the window based on the location
      *
      * <p>id(0x60020008)</p>
+     * <p>vtableId(15)</p>
      */
     @ComMethod(name = "FindWindowSW", dispId = 0x60020008)
     com.sun.jna.platform.win32.COM.util.IDispatch FindWindowSW(Object pvarloc,
@@ -97,6 +105,7 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      * Notifies on creation and frame name set
      *
      * <p>id(0x60020009)</p>
+     * <p>vtableId(16)</p>
      */
     @ComMethod(name = "OnCreated", dispId = 0x60020009)
     void OnCreated(Integer lCookie,
@@ -106,6 +115,7 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      * Used by IExplore to register different processes
      *
      * <p>id(0x6002000a)</p>
+     * <p>vtableId(17)</p>
      */
     @ComMethod(name = "ProcessAttachDetach", dispId = 0x6002000a)
     void ProcessAttachDetach(Boolean fAttach);
