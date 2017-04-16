@@ -40,6 +40,12 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>stdole2</artifactId>
+                                    <version>2.0.1</version>
+                                    <type>pom</type>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
                                     <artifactId>office2</artifactId>
                                     <version>2.7.1</version>
                                 </artifactItem>
@@ -48,6 +54,12 @@
                                     <artifactId>office2</artifactId>
                                     <version>2.7.1</version>
                                     <classifier>sources</classifier>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>office2</artifactId>
+                                    <version>2.7.1</version>
+                                    <type>pom</type>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>eu.doppel_helix.jna.tlb</groupId>
@@ -62,6 +74,12 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>vbide5</artifactId>
+                                    <version>5.3.1</version>
+                                    <type>pom</type>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
                                     <artifactId>word8</artifactId>
                                     <version>8.6.1</version>
                                 </artifactItem>
@@ -70,6 +88,12 @@
                                     <artifactId>word8</artifactId>
                                     <version>8.6.1</version>
                                     <classifier>sources</classifier>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>word8</artifactId>
+                                    <version>8.6.1</version>
+                                    <type>pom</type>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>eu.doppel_helix.jna.tlb</groupId>
@@ -84,6 +108,12 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>excel1</artifactId>
+                                    <version>1.8.1</version>
+                                    <type>pom</type>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
                                     <artifactId>outlook9</artifactId>
                                     <version>9.5.1</version>
                                 </artifactItem>
@@ -92,6 +122,12 @@
                                     <artifactId>outlook9</artifactId>
                                     <version>9.5.1</version>
                                     <classifier>sources</classifier>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>outlook9</artifactId>
+                                    <version>9.5.1</version>
+                                    <type>pom</type>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>eu.doppel_helix.jna.tlb</groupId>
@@ -106,6 +142,12 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>shdocvw1</artifactId>
+                                    <version>1.1.1</version>
+                                    <type>pom</type>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
                                     <artifactId>wia1</artifactId>
                                     <version>1.0.1</version>
                                 </artifactItem>
@@ -114,6 +156,29 @@
                                     <artifactId>wia1</artifactId>
                                     <version>1.0.1</version>
                                     <classifier>sources</classifier>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>wia1</artifactId>
+                                    <version>1.0.1</version>
+                                    <type>pom</type>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>wbemdisp1</artifactId>
+                                    <version>1.2.0</version>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>wbemdisp1</artifactId>
+                                    <version>1.2.0</version>
+                                    <classifier>sources</classifier>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>eu.doppel_helix.jna.tlb</groupId>
+                                    <artifactId>wbemdisp1</artifactId>
+                                    <version>1.2.0</version>
+                                    <type>pom</type>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>eu.doppel_helix.jna.tlb</groupId>
