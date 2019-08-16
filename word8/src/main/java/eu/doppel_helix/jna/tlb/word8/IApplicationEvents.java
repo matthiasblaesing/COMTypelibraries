@@ -16,18 +16,21 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IApplicationEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
      */
     @ComMethod(name = "Startup", dispId = 0x1)
     void Startup();
             
     /**
      * <p>id(0x2)</p>
+     * <p>vtableId(8)</p>
      */
     @ComMethod(name = "Quit", dispId = 0x2)
     void Quit();
             
     /**
      * <p>id(0x3)</p>
+     * <p>vtableId(9)</p>
      */
     @ComMethod(name = "DocumentChange", dispId = 0x3)
     void DocumentChange();

@@ -16,6 +16,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface InspectorsEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xf001)</p>
+     * @param Inspector [in] {@code _Inspector}
      */
     @ComMethod(name = "NewInspector", dispId = 0xf001)
     void NewInspector(_Inspector Inspector);

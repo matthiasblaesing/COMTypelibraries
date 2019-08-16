@@ -16,72 +16,88 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface CheckBox extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x3e8)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Application", dispId = 0x3e8)
     Application getApplication();
             
     /**
      * <p>id(0x3e9)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Creator", dispId = 0x3e9)
     Integer getCreator();
             
     /**
      * <p>id(0x3ea)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Parent", dispId = 0x3ea)
     com.sun.jna.platform.win32.COM.util.IDispatch getParent();
             
     /**
      * <p>id(0x0)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Valid", dispId = 0x0)
     Boolean getValid();
             
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(11)</p>
      */
     @ComProperty(name = "AutoSize", dispId = 0x1)
     Boolean getAutoSize();
             
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(12)</p>
+     * @param param0 [in] {@code Boolean}
      */
     @ComProperty(name = "AutoSize", dispId = 0x1)
     void setAutoSize(Boolean param0);
             
     /**
      * <p>id(0x2)</p>
+     * <p>vtableId(13)</p>
      */
     @ComProperty(name = "Size", dispId = 0x2)
     Float getSize();
             
     /**
      * <p>id(0x2)</p>
+     * <p>vtableId(14)</p>
+     * @param param0 [in] {@code Float}
      */
     @ComProperty(name = "Size", dispId = 0x2)
     void setSize(Float param0);
             
     /**
      * <p>id(0x3)</p>
+     * <p>vtableId(15)</p>
      */
     @ComProperty(name = "Default", dispId = 0x3)
     Boolean get_Default();
             
     /**
      * <p>id(0x3)</p>
+     * <p>vtableId(16)</p>
+     * @param param0 [in] {@code Boolean}
      */
     @ComProperty(name = "Default", dispId = 0x3)
     void set_Default(Boolean param0);
             
     /**
      * <p>id(0x4)</p>
+     * <p>vtableId(17)</p>
      */
     @ComProperty(name = "Value", dispId = 0x4)
     Boolean getValue();
             
     /**
      * <p>id(0x4)</p>
+     * <p>vtableId(18)</p>
+     * @param param0 [in] {@code Boolean}
      */
     @ComProperty(name = "Value", dispId = 0x4)
     void setValue(Boolean param0);

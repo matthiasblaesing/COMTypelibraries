@@ -16,6 +16,9 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface _dispCommandBarControlEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1)</p>
+     * @param CommandBarControl [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
+     * @param handled [in] {@code Boolean}
+     * @param CancelDefault [in] {@code Boolean}
      */
     @ComMethod(name = "Click", dispId = 0x1)
     void Click(com.sun.jna.platform.win32.COM.util.IDispatch CommandBarControl,

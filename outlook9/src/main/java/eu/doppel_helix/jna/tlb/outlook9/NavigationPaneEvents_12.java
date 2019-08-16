@@ -16,6 +16,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface NavigationPaneEvents_12 extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xfbc9)</p>
+     * @param CurrentModule [in] {@code NavigationModule}
      */
     @ComMethod(name = "ModuleSwitch", dispId = 0xfbc9)
     void ModuleSwitch(NavigationModule CurrentModule);

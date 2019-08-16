@@ -16,66 +16,88 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface ISparkVerticalAxis extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x94)</p>
+     * <p>vtableId(7)</p>
+     * @param RHS [out] {@code Application}
      */
     @ComProperty(name = "Application", dispId = 0x94)
     com.sun.jna.platform.win32.WinNT.HRESULT getApplication(VARIANT RHS);
             
     /**
      * <p>id(0x95)</p>
+     * <p>vtableId(8)</p>
+     * @param RHS [out] {@code XlCreator}
      */
     @ComProperty(name = "Creator", dispId = 0x95)
     com.sun.jna.platform.win32.WinNT.HRESULT getCreator(VARIANT RHS);
             
     /**
      * <p>id(0x96)</p>
+     * <p>vtableId(9)</p>
+     * @param RHS [out] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
      */
     @ComProperty(name = "Parent", dispId = 0x96)
     com.sun.jna.platform.win32.WinNT.HRESULT getParent(VARIANT RHS);
             
     /**
      * <p>id(0xb95)</p>
+     * <p>vtableId(10)</p>
+     * @param RHS [out] {@code XlSparkScale}
      */
     @ComProperty(name = "MinScaleType", dispId = 0xb95)
     com.sun.jna.platform.win32.WinNT.HRESULT getMinScaleType(VARIANT RHS);
             
     /**
      * <p>id(0xb95)</p>
+     * <p>vtableId(11)</p>
+     * @param RHS [in] {@code XlSparkScale}
      */
     @ComProperty(name = "MinScaleType", dispId = 0xb95)
     com.sun.jna.platform.win32.WinNT.HRESULT setMinScaleType(XlSparkScale RHS);
             
     /**
      * <p>id(0xb96)</p>
+     * <p>vtableId(12)</p>
+     * @param RHS [out] {@code Object}
      */
     @ComProperty(name = "CustomMinScaleValue", dispId = 0xb96)
     com.sun.jna.platform.win32.WinNT.HRESULT getCustomMinScaleValue(VARIANT RHS);
             
     /**
      * <p>id(0xb96)</p>
+     * <p>vtableId(13)</p>
+     * @param RHS [in] {@code Object}
      */
     @ComProperty(name = "CustomMinScaleValue", dispId = 0xb96)
     com.sun.jna.platform.win32.WinNT.HRESULT setCustomMinScaleValue(Object RHS);
             
     /**
      * <p>id(0xb97)</p>
+     * <p>vtableId(14)</p>
+     * @param RHS [out] {@code XlSparkScale}
      */
     @ComProperty(name = "MaxScaleType", dispId = 0xb97)
     com.sun.jna.platform.win32.WinNT.HRESULT getMaxScaleType(VARIANT RHS);
             
     /**
      * <p>id(0xb97)</p>
+     * <p>vtableId(15)</p>
+     * @param RHS [in] {@code XlSparkScale}
      */
     @ComProperty(name = "MaxScaleType", dispId = 0xb97)
     com.sun.jna.platform.win32.WinNT.HRESULT setMaxScaleType(XlSparkScale RHS);
             
     /**
      * <p>id(0xb98)</p>
+     * <p>vtableId(16)</p>
+     * @param RHS [out] {@code Object}
      */
     @ComProperty(name = "CustomMaxScaleValue", dispId = 0xb98)
     com.sun.jna.platform.win32.WinNT.HRESULT getCustomMaxScaleValue(VARIANT RHS);
             
     /**
      * <p>id(0xb98)</p>
+     * <p>vtableId(17)</p>
+     * @param RHS [in] {@code Object}
      */
     @ComProperty(name = "CustomMaxScaleValue", dispId = 0xb98)
     com.sun.jna.platform.win32.WinNT.HRESULT setCustomMaxScaleValue(Object RHS);

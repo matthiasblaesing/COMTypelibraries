@@ -16,6 +16,8 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface MAPIFolderEvents_12 extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xfba8)</p>
+     * @param MoveTo [in] {@code MAPIFolder}
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeFolderMove", dispId = 0xfba8)
     void BeforeFolderMove(MAPIFolder MoveTo,
@@ -23,6 +25,9 @@ public interface MAPIFolderEvents_12 extends IUnknown, IRawDispatchHandle, IDisp
             
     /**
      * <p>id(0xfba9)</p>
+     * @param Item [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
+     * @param MoveTo [in] {@code MAPIFolder}
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeItemMove", dispId = 0xfba9)
     void BeforeItemMove(com.sun.jna.platform.win32.COM.util.IDispatch Item,

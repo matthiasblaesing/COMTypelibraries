@@ -16,6 +16,9 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IBlogPictureExtensibility extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
+     * @param BlogPictureProvider [out] {@code String}
+     * @param FriendlyName [out] {@code String}
      */
     @ComMethod(name = "BlogPictureProviderProperties", dispId = 0x1)
     void BlogPictureProviderProperties(VARIANT BlogPictureProvider,
@@ -23,6 +26,11 @@ public interface IBlogPictureExtensibility extends IUnknown, IRawDispatchHandle,
             
     /**
      * <p>id(0x2)</p>
+     * <p>vtableId(8)</p>
+     * @param Account [in] {@code String}
+     * @param BlogProvider [in] {@code String}
+     * @param ParentWindow [in] {@code Integer}
+     * @param Document [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
      */
     @ComMethod(name = "CreatePictureAccount", dispId = 0x2)
     void CreatePictureAccount(String Account,
@@ -32,6 +40,13 @@ public interface IBlogPictureExtensibility extends IUnknown, IRawDispatchHandle,
             
     /**
      * <p>id(0x3)</p>
+     * <p>vtableId(9)</p>
+     * @param Account [in] {@code String}
+     * @param ParentWindow [in] {@code Integer}
+     * @param Document [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
+     * @param Image [in] {@code com.sun.jna.platform.win32.COM.util.IUnknown}
+     * @param PictureURI [out] {@code String}
+     * @param ImageType [in] {@code Integer}
      */
     @ComMethod(name = "PublishPicture", dispId = 0x3)
     void PublishPicture(String Account,

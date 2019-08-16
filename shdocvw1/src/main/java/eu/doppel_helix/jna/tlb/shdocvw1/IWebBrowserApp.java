@@ -57,6 +57,11 @@ public interface IWebBrowserApp extends IUnknown, IRawDispatchHandle, IDispatch 
      *
      * <p>id(0x68)</p>
      * <p>vtableId(11)</p>
+     * @param URL [in] {@code String}
+     * @param Flags [in, optional] {@code Object}
+     * @param TargetFrameName [in, optional] {@code Object}
+     * @param PostData [in, optional] {@code Object}
+     * @param Headers [in, optional] {@code Object}
      */
     @ComMethod(name = "Navigate", dispId = 0x68)
     void Navigate(String URL,
@@ -79,6 +84,7 @@ public interface IWebBrowserApp extends IUnknown, IRawDispatchHandle, IDispatch 
      *
      * <p>id(0x69)</p>
      * <p>vtableId(13)</p>
+     * @param Level [in, optional] {@code Object}
      */
     @ComMethod(name = "Refresh2", dispId = 0x69)
     void Refresh2(Object Level);
@@ -160,6 +166,7 @@ public interface IWebBrowserApp extends IUnknown, IRawDispatchHandle, IDispatch 
      *
      * <p>id(0xce)</p>
      * <p>vtableId(22)</p>
+     * @param param0 [in] {@code Integer}
      */
     @ComProperty(name = "Left", dispId = 0xce)
     void setLeft(Integer param0);
@@ -178,6 +185,7 @@ public interface IWebBrowserApp extends IUnknown, IRawDispatchHandle, IDispatch 
      *
      * <p>id(0xcf)</p>
      * <p>vtableId(24)</p>
+     * @param param0 [in] {@code Integer}
      */
     @ComProperty(name = "Top", dispId = 0xcf)
     void setTop(Integer param0);
@@ -196,6 +204,7 @@ public interface IWebBrowserApp extends IUnknown, IRawDispatchHandle, IDispatch 
      *
      * <p>id(0xd0)</p>
      * <p>vtableId(26)</p>
+     * @param param0 [in] {@code Integer}
      */
     @ComProperty(name = "Width", dispId = 0xd0)
     void setWidth(Integer param0);
@@ -214,6 +223,7 @@ public interface IWebBrowserApp extends IUnknown, IRawDispatchHandle, IDispatch 
      *
      * <p>id(0xd1)</p>
      * <p>vtableId(28)</p>
+     * @param param0 [in] {@code Integer}
      */
     @ComProperty(name = "Height", dispId = 0xd1)
     void setHeight(Integer param0);
@@ -259,6 +269,8 @@ public interface IWebBrowserApp extends IUnknown, IRawDispatchHandle, IDispatch 
      *
      * <p>id(0x12d)</p>
      * <p>vtableId(33)</p>
+     * @param pcx [inout] {@code Integer}
+     * @param pcy [inout] {@code Integer}
      */
     @ComMethod(name = "ClientToWindow", dispId = 0x12d)
     void ClientToWindow(VARIANT pcx,
@@ -269,6 +281,8 @@ public interface IWebBrowserApp extends IUnknown, IRawDispatchHandle, IDispatch 
      *
      * <p>id(0x12e)</p>
      * <p>vtableId(34)</p>
+     * @param Property [in] {@code String}
+     * @param vtValue [in] {@code Object}
      */
     @ComMethod(name = "PutProperty", dispId = 0x12e)
     void PutProperty(String Property,
@@ -279,6 +293,7 @@ public interface IWebBrowserApp extends IUnknown, IRawDispatchHandle, IDispatch 
      *
      * <p>id(0x12f)</p>
      * <p>vtableId(35)</p>
+     * @param Property [in] {@code String}
      */
     @ComMethod(name = "GetProperty", dispId = 0x12f)
     Object GetProperty(String Property);
@@ -299,7 +314,7 @@ public interface IWebBrowserApp extends IUnknown, IRawDispatchHandle, IDispatch 
      * <p>vtableId(37)</p>
      */
     @ComProperty(name = "HWND", dispId = 0xfffffdfd)
-    Integer getHWND();
+    Long getHWND();
             
     /**
      * Returns file specification of the application, including path.
@@ -333,6 +348,7 @@ public interface IWebBrowserApp extends IUnknown, IRawDispatchHandle, IDispatch 
      *
      * <p>id(0x192)</p>
      * <p>vtableId(41)</p>
+     * @param param0 [in] {@code Boolean}
      */
     @ComProperty(name = "Visible", dispId = 0x192)
     void setVisible(Boolean param0);
@@ -351,6 +367,7 @@ public interface IWebBrowserApp extends IUnknown, IRawDispatchHandle, IDispatch 
      *
      * <p>id(0x193)</p>
      * <p>vtableId(43)</p>
+     * @param param0 [in] {@code Boolean}
      */
     @ComProperty(name = "StatusBar", dispId = 0x193)
     void setStatusBar(Boolean param0);
@@ -369,6 +386,7 @@ public interface IWebBrowserApp extends IUnknown, IRawDispatchHandle, IDispatch 
      *
      * <p>id(0x194)</p>
      * <p>vtableId(45)</p>
+     * @param param0 [in] {@code String}
      */
     @ComProperty(name = "StatusText", dispId = 0x194)
     void setStatusText(String param0);
@@ -387,6 +405,7 @@ public interface IWebBrowserApp extends IUnknown, IRawDispatchHandle, IDispatch 
      *
      * <p>id(0x195)</p>
      * <p>vtableId(47)</p>
+     * @param param0 [in] {@code Integer}
      */
     @ComProperty(name = "ToolBar", dispId = 0x195)
     void setToolBar(Integer param0);
@@ -405,6 +424,7 @@ public interface IWebBrowserApp extends IUnknown, IRawDispatchHandle, IDispatch 
      *
      * <p>id(0x196)</p>
      * <p>vtableId(49)</p>
+     * @param param0 [in] {@code Boolean}
      */
     @ComProperty(name = "MenuBar", dispId = 0x196)
     void setMenuBar(Boolean param0);
@@ -423,6 +443,7 @@ public interface IWebBrowserApp extends IUnknown, IRawDispatchHandle, IDispatch 
      *
      * <p>id(0x197)</p>
      * <p>vtableId(51)</p>
+     * @param param0 [in] {@code Boolean}
      */
     @ComProperty(name = "FullScreen", dispId = 0x197)
     void setFullScreen(Boolean param0);

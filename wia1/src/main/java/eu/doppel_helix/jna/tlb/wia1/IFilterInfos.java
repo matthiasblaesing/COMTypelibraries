@@ -18,6 +18,8 @@ public interface IFilterInfos extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the specified item in the collection either by position or name
      *
      * <p>id(0x0)</p>
+     * <p>vtableId(7)</p>
+     * @param Index [in] {@code Object}
      */
     @ComProperty(name = "Item", dispId = 0x0)
     IFilterInfo getItem(Object Index);
@@ -26,6 +28,7 @@ public interface IFilterInfos extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the number of members in the collection
      *
      * <p>id(0x1)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Count", dispId = 0x1)
     Integer getCount();

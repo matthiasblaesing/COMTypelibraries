@@ -16,6 +16,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface ExplorersEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xf001)</p>
+     * @param Explorer [in] {@code _Explorer}
      */
     @ComMethod(name = "NewExplorer", dispId = 0xf001)
     void NewExplorer(_Explorer Explorer);

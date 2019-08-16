@@ -16,18 +16,22 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface HeaderFooter extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x8a)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Text", dispId = 0x8a)
     String getText();
             
     /**
      * <p>id(0x8a)</p>
+     * <p>vtableId(8)</p>
+     * @param param0 [in] {@code String}
      */
     @ComProperty(name = "Text", dispId = 0x8a)
     void setText(String param0);
             
     /**
      * <p>id(0x1df)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Picture", dispId = 0x1df)
     Graphic getPicture();

@@ -16,48 +16,56 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface Exception extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xf000)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Application", dispId = 0xf000)
     _Application getApplication();
             
     /**
      * <p>id(0xf00a)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Class", dispId = 0xf00a)
     OlObjectClass get_Class();
             
     /**
      * <p>id(0xf00b)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Session", dispId = 0xf00b)
     _NameSpace getSession();
             
     /**
      * <p>id(0xf001)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Parent", dispId = 0xf001)
     com.sun.jna.platform.win32.COM.util.IDispatch getParent();
             
     /**
      * <p>id(0x2001)</p>
+     * <p>vtableId(11)</p>
      */
     @ComProperty(name = "AppointmentItem", dispId = 0x2001)
     AppointmentItem getAppointmentItem();
             
     /**
      * <p>id(0x2002)</p>
+     * <p>vtableId(12)</p>
      */
     @ComProperty(name = "Deleted", dispId = 0x2002)
     Boolean getDeleted();
             
     /**
      * <p>id(0x2000)</p>
+     * <p>vtableId(13)</p>
      */
     @ComProperty(name = "OriginalDate", dispId = 0x2000)
     java.util.Date getOriginalDate();
             
     /**
      * <p>id(0xfa09)</p>
+     * <p>vtableId(14)</p>
      */
     @ComProperty(name = "ItemProperties", dispId = 0xfa09)
     ItemProperties getItemProperties();

@@ -16,72 +16,87 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface ConnectorFormat extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x3e8)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Application", dispId = 0x3e8)
     Application getApplication();
             
     /**
      * <p>id(0x3e9)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Creator", dispId = 0x3e9)
     Integer getCreator();
             
     /**
      * <p>id(0x64)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "BeginConnected", dispId = 0x64)
     eu.doppel_helix.jna.tlb.office2.MsoTriState getBeginConnected();
             
     /**
      * <p>id(0x65)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "BeginConnectedShape", dispId = 0x65)
     Shape getBeginConnectedShape();
             
     /**
      * <p>id(0x66)</p>
+     * <p>vtableId(11)</p>
      */
     @ComProperty(name = "BeginConnectionSite", dispId = 0x66)
     Integer getBeginConnectionSite();
             
     /**
      * <p>id(0x67)</p>
+     * <p>vtableId(12)</p>
      */
     @ComProperty(name = "EndConnected", dispId = 0x67)
     eu.doppel_helix.jna.tlb.office2.MsoTriState getEndConnected();
             
     /**
      * <p>id(0x68)</p>
+     * <p>vtableId(13)</p>
      */
     @ComProperty(name = "EndConnectedShape", dispId = 0x68)
     Shape getEndConnectedShape();
             
     /**
      * <p>id(0x69)</p>
+     * <p>vtableId(14)</p>
      */
     @ComProperty(name = "EndConnectionSite", dispId = 0x69)
     Integer getEndConnectionSite();
             
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(15)</p>
      */
     @ComProperty(name = "Parent", dispId = 0x1)
     com.sun.jna.platform.win32.COM.util.IDispatch getParent();
             
     /**
      * <p>id(0x6a)</p>
+     * <p>vtableId(16)</p>
      */
     @ComProperty(name = "Type", dispId = 0x6a)
     eu.doppel_helix.jna.tlb.office2.MsoConnectorType getType();
             
     /**
      * <p>id(0x6a)</p>
+     * <p>vtableId(17)</p>
+     * @param param0 [in] {@code eu.doppel_helix.jna.tlb.office2.MsoConnectorType}
      */
     @ComProperty(name = "Type", dispId = 0x6a)
     void setType(eu.doppel_helix.jna.tlb.office2.MsoConnectorType param0);
             
     /**
      * <p>id(0xa)</p>
+     * <p>vtableId(18)</p>
+     * @param ConnectedShape [out] {@code Shape}
+     * @param ConnectionSite [in] {@code Integer}
      */
     @ComMethod(name = "BeginConnect", dispId = 0xa)
     void BeginConnect(VARIANT ConnectedShape,
@@ -89,12 +104,16 @@ public interface ConnectorFormat extends IUnknown, IRawDispatchHandle, IDispatch
             
     /**
      * <p>id(0xb)</p>
+     * <p>vtableId(19)</p>
      */
     @ComMethod(name = "BeginDisconnect", dispId = 0xb)
     void BeginDisconnect();
             
     /**
      * <p>id(0xc)</p>
+     * <p>vtableId(20)</p>
+     * @param ConnectedShape [out] {@code Shape}
+     * @param ConnectionSite [in] {@code Integer}
      */
     @ComMethod(name = "EndConnect", dispId = 0xc)
     void EndConnect(VARIANT ConnectedShape,
@@ -102,6 +121,7 @@ public interface ConnectorFormat extends IUnknown, IRawDispatchHandle, IDispatch
             
     /**
      * <p>id(0xd)</p>
+     * <p>vtableId(21)</p>
      */
     @ComMethod(name = "EndDisconnect", dispId = 0xd)
     void EndDisconnect();

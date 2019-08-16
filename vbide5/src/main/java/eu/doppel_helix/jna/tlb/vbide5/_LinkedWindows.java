@@ -16,36 +16,45 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface _LinkedWindows extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "VBE", dispId = 0x1)
     VBE getVBE();
             
     /**
      * <p>id(0x2)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Parent", dispId = 0x2)
     Window getParent();
             
     /**
      * <p>id(0x0)</p>
+     * <p>vtableId(9)</p>
+     * @param index [in] {@code Object}
      */
     @ComMethod(name = "Item", dispId = 0x0)
     Window Item(Object index);
             
     /**
      * <p>id(0xc9)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Count", dispId = 0xc9)
     Integer getCount();
             
     /**
      * <p>id(0xca)</p>
+     * <p>vtableId(12)</p>
+     * @param Window [in] {@code Window}
      */
     @ComMethod(name = "Remove", dispId = 0xca)
     void Remove(Window Window);
             
     /**
      * <p>id(0xcb)</p>
+     * <p>vtableId(13)</p>
+     * @param Window [in] {@code Window}
      */
     @ComMethod(name = "Add", dispId = 0xcb)
     void Add(Window Window);

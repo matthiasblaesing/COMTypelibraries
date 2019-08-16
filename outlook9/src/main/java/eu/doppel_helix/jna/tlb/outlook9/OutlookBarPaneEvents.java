@@ -16,6 +16,8 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface OutlookBarPaneEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xf001)</p>
+     * @param Shortcut [in] {@code OutlookBarShortcut}
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeNavigate", dispId = 0xf001)
     void BeforeNavigate(OutlookBarShortcut Shortcut,
@@ -23,6 +25,8 @@ public interface OutlookBarPaneEvents extends IUnknown, IRawDispatchHandle, IDis
             
     /**
      * <p>id(0xf002)</p>
+     * @param ToGroup [in] {@code OutlookBarGroup}
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeGroupSwitch", dispId = 0xf002)
     void BeforeGroupSwitch(OutlookBarGroup ToGroup,

@@ -16,6 +16,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface AccountsEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xfc6c)</p>
+     * @param Account [in] {@code Account}
      */
     @ComMethod(name = "AutoDiscoverComplete", dispId = 0xfc6c)
     void AutoDiscoverComplete(Account Account);

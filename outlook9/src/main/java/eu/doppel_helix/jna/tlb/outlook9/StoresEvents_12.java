@@ -16,6 +16,8 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface StoresEvents_12 extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xfbb1)</p>
+     * @param Store [in] {@code _Store}
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeStoreRemove", dispId = 0xfbb1)
     void BeforeStoreRemove(_Store Store,
@@ -23,6 +25,7 @@ public interface StoresEvents_12 extends IUnknown, IRawDispatchHandle, IDispatch
             
     /**
      * <p>id(0xf001)</p>
+     * @param Store [in] {@code _Store}
      */
     @ComMethod(name = "StoreAdd", dispId = 0xf001)
     void StoreAdd(_Store Store);

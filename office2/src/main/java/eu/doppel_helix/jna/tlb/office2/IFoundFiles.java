@@ -16,12 +16,15 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IFoundFiles extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x0)</p>
+     * <p>vtableId(7)</p>
+     * @param Index [in] {@code Integer}
      */
     @ComProperty(name = "Item", dispId = 0x0)
     String getItem(Integer Index);
             
     /**
      * <p>id(0x60020001)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Count", dispId = 0x60020001)
     Integer getCount();

@@ -18,6 +18,7 @@ public interface IRational extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the Rational Value as a Double
      *
      * <p>id(0x0)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Value", dispId = 0x0)
     Double getValue();
@@ -26,6 +27,7 @@ public interface IRational extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns/Sets the Rational Value Numerator
      *
      * <p>id(0x1)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Numerator", dispId = 0x1)
     Integer getNumerator();
@@ -34,6 +36,8 @@ public interface IRational extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns/Sets the Rational Value Numerator
      *
      * <p>id(0x1)</p>
+     * <p>vtableId(9)</p>
+     * @param param0 [in] {@code Integer}
      */
     @ComProperty(name = "Numerator", dispId = 0x1)
     void setNumerator(Integer param0);
@@ -42,6 +46,7 @@ public interface IRational extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns/Sets the Rational Value Denominator
      *
      * <p>id(0x2)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Denominator", dispId = 0x2)
     Integer getDenominator();
@@ -50,6 +55,8 @@ public interface IRational extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns/Sets the Rational Value Denominator
      *
      * <p>id(0x2)</p>
+     * <p>vtableId(11)</p>
+     * @param param0 [in] {@code Integer}
      */
     @ComProperty(name = "Denominator", dispId = 0x2)
     void setDenominator(Integer param0);

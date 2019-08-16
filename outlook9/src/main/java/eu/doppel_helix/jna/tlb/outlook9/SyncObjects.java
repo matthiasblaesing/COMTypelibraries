@@ -16,42 +16,50 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface SyncObjects extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xf000)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Application", dispId = 0xf000)
     _Application getApplication();
             
     /**
      * <p>id(0xf00a)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Class", dispId = 0xf00a)
     OlObjectClass get_Class();
             
     /**
      * <p>id(0xf00b)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Session", dispId = 0xf00b)
     _NameSpace getSession();
             
     /**
      * <p>id(0xf001)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Parent", dispId = 0xf001)
     com.sun.jna.platform.win32.COM.util.IDispatch getParent();
             
     /**
      * <p>id(0x50)</p>
+     * <p>vtableId(11)</p>
      */
     @ComProperty(name = "Count", dispId = 0x50)
     Integer getCount();
             
     /**
      * <p>id(0x51)</p>
+     * <p>vtableId(12)</p>
+     * @param Index [in] {@code Object}
      */
     @ComMethod(name = "Item", dispId = 0x51)
     SyncObject Item(Object Index);
             
     /**
      * <p>id(0xfa4a)</p>
+     * <p>vtableId(13)</p>
      */
     @ComProperty(name = "AppFolders", dispId = 0xfa4a)
     _SyncObject getAppFolders();

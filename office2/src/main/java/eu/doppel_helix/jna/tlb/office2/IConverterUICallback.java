@@ -16,12 +16,19 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IConverterUICallback extends IUnknown, IRawDispatchHandle {
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(3)</p>
+     * @param uPercentComplete [in] {@code Integer}
      */
     @ComMethod(name = "HrReportProgress", dispId = 0x1)
     com.sun.jna.platform.win32.WinNT.HRESULT HrReportProgress(Integer uPercentComplete);
             
     /**
      * <p>id(0x2)</p>
+     * <p>vtableId(4)</p>
+     * @param bstrText [in] {@code String}
+     * @param bstrCaption [in] {@code String}
+     * @param uType [in] {@code Integer}
+     * @param pidResult [out] {@code Integer}
      */
     @ComMethod(name = "HrMessageBox", dispId = 0x2)
     com.sun.jna.platform.win32.WinNT.HRESULT HrMessageBox(String bstrText,
@@ -31,6 +38,11 @@ public interface IConverterUICallback extends IUnknown, IRawDispatchHandle {
             
     /**
      * <p>id(0x3)</p>
+     * <p>vtableId(5)</p>
+     * @param bstrText [in] {@code String}
+     * @param bstrCaption [in] {@code String}
+     * @param pbstrInput [out] {@code String}
+     * @param fPassword [in] {@code Integer}
      */
     @ComMethod(name = "HrInputBox", dispId = 0x3)
     com.sun.jna.platform.win32.WinNT.HRESULT HrInputBox(String bstrText,

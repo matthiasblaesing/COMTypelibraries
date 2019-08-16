@@ -16,6 +16,11 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface ISpeech extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x7e1)</p>
+     * <p>vtableId(7)</p>
+     * @param Text [in] {@code String}
+     * @param SpeakAsync [in, optional] {@code Object}
+     * @param SpeakXML [in, optional] {@code Object}
+     * @param Purge [in, optional] {@code Object}
      */
     @ComMethod(name = "Speak", dispId = 0x7e1)
     com.sun.jna.platform.win32.WinNT.HRESULT Speak(String Text,
@@ -25,24 +30,32 @@ public interface ISpeech extends IUnknown, IRawDispatchHandle, IDispatch {
             
     /**
      * <p>id(0xa8)</p>
+     * <p>vtableId(8)</p>
+     * @param RHS [out] {@code XlSpeakDirection}
      */
     @ComProperty(name = "Direction", dispId = 0xa8)
     com.sun.jna.platform.win32.WinNT.HRESULT getDirection(VARIANT RHS);
             
     /**
      * <p>id(0xa8)</p>
+     * <p>vtableId(9)</p>
+     * @param RHS [in] {@code XlSpeakDirection}
      */
     @ComProperty(name = "Direction", dispId = 0xa8)
     com.sun.jna.platform.win32.WinNT.HRESULT setDirection(XlSpeakDirection RHS);
             
     /**
      * <p>id(0x8bb)</p>
+     * <p>vtableId(10)</p>
+     * @param RHS [out] {@code Boolean}
      */
     @ComProperty(name = "SpeakCellOnEnter", dispId = 0x8bb)
     com.sun.jna.platform.win32.WinNT.HRESULT getSpeakCellOnEnter(VARIANT RHS);
             
     /**
      * <p>id(0x8bb)</p>
+     * <p>vtableId(11)</p>
+     * @param RHS [in] {@code Boolean}
      */
     @ComProperty(name = "SpeakCellOnEnter", dispId = 0x8bb)
     com.sun.jna.platform.win32.WinNT.HRESULT setSpeakCellOnEnter(Boolean RHS);

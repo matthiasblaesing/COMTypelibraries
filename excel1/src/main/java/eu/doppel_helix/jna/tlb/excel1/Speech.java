@@ -16,6 +16,11 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface Speech extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x7e1)</p>
+     * <p>vtableId(7)</p>
+     * @param Text [in] {@code String}
+     * @param SpeakAsync [in, optional] {@code Object}
+     * @param SpeakXML [in, optional] {@code Object}
+     * @param Purge [in, optional] {@code Object}
      */
     @ComMethod(name = "Speak", dispId = 0x7e1)
     void Speak(String Text,
@@ -25,24 +30,30 @@ public interface Speech extends IUnknown, IRawDispatchHandle, IDispatch {
             
     /**
      * <p>id(0xa8)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Direction", dispId = 0xa8)
     XlSpeakDirection getDirection();
             
     /**
      * <p>id(0xa8)</p>
+     * <p>vtableId(9)</p>
+     * @param param0 [in] {@code XlSpeakDirection}
      */
     @ComProperty(name = "Direction", dispId = 0xa8)
     void setDirection(XlSpeakDirection param0);
             
     /**
      * <p>id(0x8bb)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "SpeakCellOnEnter", dispId = 0x8bb)
     Boolean getSpeakCellOnEnter();
             
     /**
      * <p>id(0x8bb)</p>
+     * <p>vtableId(11)</p>
+     * @param param0 [in] {@code Boolean}
      */
     @ComProperty(name = "SpeakCellOnEnter", dispId = 0x8bb)
     void setSpeakCellOnEnter(Boolean param0);

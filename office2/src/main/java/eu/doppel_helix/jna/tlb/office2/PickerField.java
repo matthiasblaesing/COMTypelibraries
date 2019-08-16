@@ -16,30 +16,35 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface PickerField extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x60020000)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Application", dispId = 0x60020000)
     com.sun.jna.platform.win32.COM.util.IDispatch getApplication();
             
     /**
      * <p>id(0x60020001)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Creator", dispId = 0x60020001)
     Integer getCreator();
             
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Name", dispId = 0x1)
     String getName();
             
     /**
      * <p>id(0x2)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Type", dispId = 0x2)
     MsoPickerField getType();
             
     /**
      * <p>id(0x3)</p>
+     * <p>vtableId(11)</p>
      */
     @ComProperty(name = "IsHidden", dispId = 0x3)
     Boolean getIsHidden();

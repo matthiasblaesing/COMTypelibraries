@@ -16,12 +16,14 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IOLEObjectEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x605)</p>
+     * <p>vtableId(7)</p>
      */
     @ComMethod(name = "GotFocus", dispId = 0x605)
     com.sun.jna.platform.win32.WinNT.HRESULT GotFocus();
             
     /**
      * <p>id(0x606)</p>
+     * <p>vtableId(8)</p>
      */
     @ComMethod(name = "LostFocus", dispId = 0x606)
     com.sun.jna.platform.win32.WinNT.HRESULT LostFocus();

@@ -18,6 +18,7 @@ public interface IItem extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the ItemID for this Item
      *
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "ItemID", dispId = 0x1)
     String getItemID();
@@ -26,6 +27,7 @@ public interface IItem extends IUnknown, IRawDispatchHandle, IDispatch {
      * A collection of all properties for this item
      *
      * <p>id(0x2)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Properties", dispId = 0x2)
     IProperties getProperties();
@@ -34,6 +36,7 @@ public interface IItem extends IUnknown, IRawDispatchHandle, IDispatch {
      * A collection of all child items for this item
      *
      * <p>id(0x3)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Items", dispId = 0x3)
     IItems getItems();
@@ -42,6 +45,7 @@ public interface IItem extends IUnknown, IRawDispatchHandle, IDispatch {
      * A collection of all supported format types for this item
      *
      * <p>id(0x4)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Formats", dispId = 0x4)
     IFormats getFormats();
@@ -50,6 +54,7 @@ public interface IItem extends IUnknown, IRawDispatchHandle, IDispatch {
      * A collection of all commands for this item
      *
      * <p>id(0x5)</p>
+     * <p>vtableId(11)</p>
      */
     @ComProperty(name = "Commands", dispId = 0x5)
     IDeviceCommands getCommands();
@@ -58,6 +63,7 @@ public interface IItem extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the underlying IWiaItem interface for this Item object
      *
      * <p>id(0x6)</p>
+     * <p>vtableId(12)</p>
      */
     @ComProperty(name = "WiaItem", dispId = 0x6)
     com.sun.jna.platform.win32.COM.util.IUnknown getWiaItem();
@@ -66,6 +72,8 @@ public interface IItem extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns an ImageFile object, in this version, in the format specified in FormatID if supported, otherwise using the preferred format for this imaging device. Future versions may return a collection of ImageFile objects.
      *
      * <p>id(0x7)</p>
+     * <p>vtableId(13)</p>
+     * @param FormatID [in, optional] {@code String}
      */
     @ComMethod(name = "Transfer", dispId = 0x7)
     Object Transfer(String FormatID);
@@ -74,6 +82,8 @@ public interface IItem extends IUnknown, IRawDispatchHandle, IDispatch {
      * Issues the command specified by CommandID. CommandIDs are device dependent. Valid CommandIDs for this Item are contained in the Commands collection.
      *
      * <p>id(0x8)</p>
+     * <p>vtableId(14)</p>
+     * @param CommandID [in] {@code String}
      */
     @ComMethod(name = "ExecuteCommand", dispId = 0x8)
     IItem ExecuteCommand(String CommandID);

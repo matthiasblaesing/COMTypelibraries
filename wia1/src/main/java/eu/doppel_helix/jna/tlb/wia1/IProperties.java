@@ -18,6 +18,8 @@ public interface IProperties extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the specified item in the collection either by position or name.
      *
      * <p>id(0x0)</p>
+     * <p>vtableId(7)</p>
+     * @param Index [in] {@code Object}
      */
     @ComProperty(name = "Item", dispId = 0x0)
     IProperty getItem(Object Index);
@@ -26,6 +28,7 @@ public interface IProperties extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the number of members in the collection
      *
      * <p>id(0x1)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Count", dispId = 0x1)
     Integer getCount();
@@ -34,6 +37,8 @@ public interface IProperties extends IUnknown, IRawDispatchHandle, IDispatch {
      * Indicates whether the specified Property exists in the collection
      *
      * <p>id(0x2)</p>
+     * <p>vtableId(9)</p>
+     * @param Index [in] {@code Object}
      */
     @ComMethod(name = "Exists", dispId = 0x2)
     Boolean Exists(Object Index);

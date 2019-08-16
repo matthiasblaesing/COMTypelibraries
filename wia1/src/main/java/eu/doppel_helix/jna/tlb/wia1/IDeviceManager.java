@@ -18,6 +18,7 @@ public interface IDeviceManager extends IUnknown, IRawDispatchHandle, IDispatch 
      * A collection of all imaging devices connected to this computer
      *
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "DeviceInfos", dispId = 0x1)
     IDeviceInfos getDeviceInfos();
@@ -26,6 +27,9 @@ public interface IDeviceManager extends IUnknown, IRawDispatchHandle, IDispatch 
      * Registers the specified EventID for the specified DeviceID. If DeviceID is "*" then OnEvent will be called whenever the event specified occurs for any device. Otherwise, OnEvent will only be called if the event specified occurs on the device specified.
      *
      * <p>id(0x2)</p>
+     * <p>vtableId(8)</p>
+     * @param EventID [in] {@code String}
+     * @param DeviceID [in, optional] {@code String}
      */
     @ComMethod(name = "RegisterEvent", dispId = 0x2)
     void RegisterEvent(String EventID,
@@ -35,6 +39,9 @@ public interface IDeviceManager extends IUnknown, IRawDispatchHandle, IDispatch 
      * Unregisters the specified EventID for the specified DeviceID. UnregisterEvent should only be called for EventID and DeviceID for which you called RegisterEvent.
      *
      * <p>id(0x3)</p>
+     * <p>vtableId(9)</p>
+     * @param EventID [in] {@code String}
+     * @param DeviceID [in, optional] {@code String}
      */
     @ComMethod(name = "UnregisterEvent", dispId = 0x3)
     void UnregisterEvent(String EventID,
@@ -44,6 +51,13 @@ public interface IDeviceManager extends IUnknown, IRawDispatchHandle, IDispatch 
      * Registers the specified Command to launch when the specified EventID for the specified DeviceID occurs. Command can be either a ClassID or the full path name and the appropriate command-line arguments needed to invoke the application.
      *
      * <p>id(0x4)</p>
+     * <p>vtableId(10)</p>
+     * @param Command [in] {@code String}
+     * @param Name [in] {@code String}
+     * @param Description [in] {@code String}
+     * @param Icon [in] {@code String}
+     * @param EventID [in] {@code String}
+     * @param DeviceID [in, optional] {@code String}
      */
     @ComMethod(name = "RegisterPersistentEvent", dispId = 0x4)
     void RegisterPersistentEvent(String Command,
@@ -57,6 +71,13 @@ public interface IDeviceManager extends IUnknown, IRawDispatchHandle, IDispatch 
      * Unregisters the specified Command for the specified EventID for the specified DeviceID. UnregisterPersistentEvent should only be called for the Command, Name, Description, Icon, EventID and DeviceID for which you called RegisterPersistentEvent.
      *
      * <p>id(0x5)</p>
+     * <p>vtableId(11)</p>
+     * @param Command [in] {@code String}
+     * @param Name [in] {@code String}
+     * @param Description [in] {@code String}
+     * @param Icon [in] {@code String}
+     * @param EventID [in] {@code String}
+     * @param DeviceID [in, optional] {@code String}
      */
     @ComMethod(name = "UnregisterPersistentEvent", dispId = 0x5)
     void UnregisterPersistentEvent(String Command,

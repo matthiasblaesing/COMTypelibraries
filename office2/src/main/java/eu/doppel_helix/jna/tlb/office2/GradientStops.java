@@ -16,36 +16,48 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface GradientStops extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x60020000)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Application", dispId = 0x60020000)
     com.sun.jna.platform.win32.COM.util.IDispatch getApplication();
             
     /**
      * <p>id(0x60020001)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Creator", dispId = 0x60020001)
     Integer getCreator();
             
     /**
      * <p>id(0x0)</p>
+     * <p>vtableId(9)</p>
+     * @param Index [in] {@code Integer}
      */
     @ComProperty(name = "Item", dispId = 0x0)
     GradientStop getItem(Integer Index);
             
     /**
      * <p>id(0x2)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Count", dispId = 0x2)
     Integer getCount();
             
     /**
      * <p>id(0xa)</p>
+     * <p>vtableId(12)</p>
+     * @param Index [in, optional] {@code Integer}
      */
     @ComMethod(name = "Delete", dispId = 0xa)
     void Delete(Integer Index);
             
     /**
      * <p>id(0xb)</p>
+     * <p>vtableId(13)</p>
+     * @param RGB [in] {@code Integer}
+     * @param Position [in] {@code Float}
+     * @param Transparency [in, optional] {@code Float}
+     * @param Index [in, optional] {@code Integer}
      */
     @ComMethod(name = "Insert", dispId = 0xb)
     void Insert(Integer RGB,
@@ -55,6 +67,12 @@ public interface GradientStops extends IUnknown, IRawDispatchHandle, IDispatch {
             
     /**
      * <p>id(0xc)</p>
+     * <p>vtableId(14)</p>
+     * @param RGB [in] {@code Integer}
+     * @param Position [in] {@code Float}
+     * @param Transparency [in, optional] {@code Float}
+     * @param Index [in, optional] {@code Integer}
+     * @param Brightness [in, optional] {@code Float}
      */
     @ComMethod(name = "Insert2", dispId = 0xc)
     void Insert2(Integer RGB,

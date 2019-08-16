@@ -409,6 +409,16 @@ public enum OLECMDID implements IComEnum {
      * (83)
      */
     OLECMDID_ONBEFOREUNLOAD(83),
+    
+    /**
+     * (84)
+     */
+    OLECMDID_SHOWMESSAGE_BLOCKABLE(84),
+    
+    /**
+     * (85)
+     */
+    OLECMDID_SHOWTASKDLG_BLOCKABLE(85),
     ;
 
     private OLECMDID(long value) {

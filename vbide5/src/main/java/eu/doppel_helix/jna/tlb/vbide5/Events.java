@@ -16,12 +16,16 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface Events extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xca)</p>
+     * <p>vtableId(7)</p>
+     * @param VBProject [in] {@code VBProject}
      */
     @ComProperty(name = "ReferencesEvents", dispId = 0xca)
     ReferencesEvents getReferencesEvents(VBProject VBProject);
             
     /**
      * <p>id(0xcd)</p>
+     * <p>vtableId(8)</p>
+     * @param CommandBarControl [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
      */
     @ComProperty(name = "CommandBarEvents", dispId = 0xcd)
     CommandBarEvents getCommandBarEvents(com.sun.jna.platform.win32.COM.util.IDispatch CommandBarControl);

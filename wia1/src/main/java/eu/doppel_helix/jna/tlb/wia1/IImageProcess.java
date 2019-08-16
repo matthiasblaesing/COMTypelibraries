@@ -18,6 +18,7 @@ public interface IImageProcess extends IUnknown, IRawDispatchHandle, IDispatch {
      * A collection of all available filters
      *
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "FilterInfos", dispId = 0x1)
     IFilterInfos getFilterInfos();
@@ -26,6 +27,7 @@ public interface IImageProcess extends IUnknown, IRawDispatchHandle, IDispatch {
      * A collection of the filters to be applied in this process
      *
      * <p>id(0x2)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Filters", dispId = 0x2)
     IFilters getFilters();
@@ -34,6 +36,8 @@ public interface IImageProcess extends IUnknown, IRawDispatchHandle, IDispatch {
      * Takes the specified ImageFile and returns the new ImageFile with all the filters applied on success
      *
      * <p>id(0x4)</p>
+     * <p>vtableId(9)</p>
+     * @param Source [in] {@code IImageFile}
      */
     @ComMethod(name = "Apply", dispId = 0x4)
     IImageFile Apply(IImageFile Source);

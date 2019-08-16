@@ -28,6 +28,10 @@ public interface OlkSenderPhotoEvents extends IUnknown, IRawDispatchHandle, IDis
             
     /**
      * <p>id(0xfffffda3)</p>
+     * @param Button [in] {@code OlMouseButton}
+     * @param Shift [in] {@code OlShiftState}
+     * @param X [in] {@code Float}
+     * @param Y [in] {@code Float}
      */
     @ComMethod(name = "MouseDown", dispId = 0xfffffda3)
     void MouseDown(OlMouseButton Button,
@@ -37,6 +41,10 @@ public interface OlkSenderPhotoEvents extends IUnknown, IRawDispatchHandle, IDis
             
     /**
      * <p>id(0xfffffda2)</p>
+     * @param Button [in] {@code OlMouseButton}
+     * @param Shift [in] {@code OlShiftState}
+     * @param X [in] {@code Float}
+     * @param Y [in] {@code Float}
      */
     @ComMethod(name = "MouseMove", dispId = 0xfffffda2)
     void MouseMove(OlMouseButton Button,
@@ -46,6 +54,10 @@ public interface OlkSenderPhotoEvents extends IUnknown, IRawDispatchHandle, IDis
             
     /**
      * <p>id(0xfffffda1)</p>
+     * @param Button [in] {@code OlMouseButton}
+     * @param Shift [in] {@code OlShiftState}
+     * @param X [in] {@code Float}
+     * @param Y [in] {@code Float}
      */
     @ComMethod(name = "MouseUp", dispId = 0xfffffda1)
     void MouseUp(OlMouseButton Button,

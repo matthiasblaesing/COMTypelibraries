@@ -16,24 +16,29 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface UserAccess extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x6e)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Name", dispId = 0x6e)
     String getName();
             
     /**
      * <p>id(0x7e4)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "AllowEdit", dispId = 0x7e4)
     Boolean getAllowEdit();
             
     /**
      * <p>id(0x7e4)</p>
+     * <p>vtableId(9)</p>
+     * @param param0 [in] {@code Boolean}
      */
     @ComProperty(name = "AllowEdit", dispId = 0x7e4)
     void setAllowEdit(Boolean param0);
             
     /**
      * <p>id(0x75)</p>
+     * <p>vtableId(10)</p>
      */
     @ComMethod(name = "Delete", dispId = 0x75)
     void Delete();

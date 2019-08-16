@@ -40,6 +40,8 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x4)</p>
      * <p>vtableId(10)</p>
+     * @param URL [in] {@code String}
+     * @param Title [in, optional] {@code Object}
      */
     @ComMethod(name = "AddFavorite", dispId = 0x4)
     void AddFavorite(String URL,
@@ -48,6 +50,7 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x5)</p>
      * <p>vtableId(11)</p>
+     * @param URL [in] {@code String}
      */
     @ComMethod(name = "AddChannel", dispId = 0x5)
     void AddChannel(String URL);
@@ -55,6 +58,12 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x6)</p>
      * <p>vtableId(12)</p>
+     * @param URL [in] {@code String}
+     * @param Type [in] {@code String}
+     * @param Left [in, optional] {@code Object}
+     * @param Top [in, optional] {@code Object}
+     * @param Width [in, optional] {@code Object}
+     * @param Height [in, optional] {@code Object}
      */
     @ComMethod(name = "AddDesktopComponent", dispId = 0x6)
     void AddDesktopComponent(String URL,
@@ -67,6 +76,7 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x7)</p>
      * <p>vtableId(13)</p>
+     * @param URL [in] {@code String}
      */
     @ComMethod(name = "IsSubscribed", dispId = 0x7)
     Boolean IsSubscribed(String URL);
@@ -74,6 +84,9 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x8)</p>
      * <p>vtableId(14)</p>
+     * @param URL [in] {@code String}
+     * @param strQuery [in] {@code String}
+     * @param varTargetFrame [in] {@code Object}
      */
     @ComMethod(name = "NavigateAndFind", dispId = 0x8)
     void NavigateAndFind(String URL,
@@ -83,6 +96,8 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x9)</p>
      * <p>vtableId(15)</p>
+     * @param fImport [in] {@code Boolean}
+     * @param strImpExpPath [in] {@code String}
      */
     @ComMethod(name = "ImportExportFavorites", dispId = 0x9)
     void ImportExportFavorites(Boolean fImport,
@@ -91,6 +106,7 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0xa)</p>
      * <p>vtableId(16)</p>
+     * @param Form [in, optional] {@code Object}
      */
     @ComMethod(name = "AutoCompleteSaveForm", dispId = 0xa)
     void AutoCompleteSaveForm(Object Form);
@@ -98,6 +114,9 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0xb)</p>
      * <p>vtableId(17)</p>
+     * @param strSearch [in] {@code String}
+     * @param strFailureUrl [in] {@code String}
+     * @param pvarTargetFrame [in, optional] {@code Object}
      */
     @ComMethod(name = "AutoScan", dispId = 0xb)
     void AutoScan(String strSearch,
@@ -107,6 +126,7 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0xc)</p>
      * <p>vtableId(18)</p>
+     * @param Reserved [in, optional] {@code Object}
      */
     @ComMethod(name = "AutoCompleteAttach", dispId = 0xc)
     void AutoCompleteAttach(Object Reserved);
@@ -114,6 +134,8 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0xd)</p>
      * <p>vtableId(19)</p>
+     * @param bstrName [in] {@code String}
+     * @param pvarIn [in] {@code Object}
      */
     @ComMethod(name = "ShowBrowserUI", dispId = 0xd)
     Object ShowBrowserUI(String bstrName,
@@ -122,6 +144,7 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0xe)</p>
      * <p>vtableId(20)</p>
+     * @param URL [in] {@code String}
      */
     @ComMethod(name = "AddSearchProvider", dispId = 0xe)
     void AddSearchProvider(String URL);
@@ -143,6 +166,9 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x11)</p>
      * <p>vtableId(23)</p>
+     * @param fSQM [in] {@code Boolean}
+     * @param fPhishing [in] {@code Boolean}
+     * @param bstrLocale [in] {@code String}
      */
     @ComMethod(name = "CustomizeSettings", dispId = 0x11)
     void CustomizeSettings(Boolean fSQM,
@@ -187,6 +213,7 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x17)</p>
      * <p>vtableId(29)</p>
+     * @param fSet [in] {@code Boolean}
      */
     @ComMethod(name = "CustomizeClearType", dispId = 0x17)
     void CustomizeClearType(Boolean fSet);
@@ -194,6 +221,7 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x18)</p>
      * <p>vtableId(30)</p>
+     * @param URL [in] {@code String}
      */
     @ComMethod(name = "IsSearchProviderInstalled", dispId = 0x18)
     Integer IsSearchProviderInstalled(String URL);
@@ -215,6 +243,7 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x1b)</p>
      * <p>vtableId(33)</p>
+     * @param fComplete [in] {@code Boolean}
      */
     @ComMethod(name = "RunOnceRequiredSettingsComplete", dispId = 0x1b)
     void RunOnceRequiredSettingsComplete(Boolean fComplete);
@@ -236,6 +265,7 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x1e)</p>
      * <p>vtableId(36)</p>
+     * @param URL [in] {@code String}
      */
     @ComMethod(name = "AddService", dispId = 0x1e)
     void AddService(String URL);
@@ -243,6 +273,8 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x1f)</p>
      * <p>vtableId(37)</p>
+     * @param URL [in] {@code String}
+     * @param Verb [in] {@code String}
      */
     @ComMethod(name = "IsServiceInstalled", dispId = 0x1f)
     Integer IsServiceInstalled(String URL,
@@ -258,6 +290,9 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x20)</p>
      * <p>vtableId(39)</p>
+     * @param URL [in] {@code String}
+     * @param Title [in] {@code String}
+     * @param Type [in, optional] {@code Object}
      */
     @ComMethod(name = "AddToFavoritesBar", dispId = 0x20)
     void AddToFavoritesBar(String URL,
@@ -274,6 +309,7 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x22)</p>
      * <p>vtableId(41)</p>
+     * @param fVisible [in] {@code Boolean}
      */
     @ComMethod(name = "SetRecentlyClosedVisible", dispId = 0x22)
     void SetRecentlyClosedVisible(Boolean fVisible);
@@ -281,6 +317,7 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x23)</p>
      * <p>vtableId(42)</p>
+     * @param fVisible [in] {@code Boolean}
      */
     @ComMethod(name = "SetActivitiesVisible", dispId = 0x23)
     void SetActivitiesVisible(Boolean fVisible);
@@ -302,6 +339,7 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x27)</p>
      * <p>vtableId(45)</p>
+     * @param fEnable [in] {@code Boolean}
      */
     @ComMethod(name = "EnableSuggestedSites", dispId = 0x27)
     void EnableSuggestedSites(Boolean fEnable);
@@ -309,6 +347,7 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x28)</p>
      * <p>vtableId(46)</p>
+     * @param bstrRelativeUrl [in] {@code String}
      */
     @ComMethod(name = "NavigateToSuggestedSites", dispId = 0x28)
     void NavigateToSuggestedSites(String bstrRelativeUrl);
@@ -344,6 +383,8 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x30)</p>
      * <p>vtableId(51)</p>
+     * @param bstrIconURL [in] {@code String}
+     * @param bstrTooltip [in] {@code String}
      */
     @ComMethod(name = "msSiteModeAddThumbBarButton", dispId = 0x30)
     Object msSiteModeAddThumbBarButton(String bstrIconURL,
@@ -352,6 +393,9 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x2e)</p>
      * <p>vtableId(52)</p>
+     * @param ButtonID [in] {@code Object}
+     * @param fEnabled [in] {@code Boolean}
+     * @param fVisible [in] {@code Boolean}
      */
     @ComMethod(name = "msSiteModeUpdateThumbBarButton", dispId = 0x2e)
     void msSiteModeUpdateThumbBarButton(Object ButtonID,
@@ -361,6 +405,8 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x2c)</p>
      * <p>vtableId(53)</p>
+     * @param IconUrl [in] {@code String}
+     * @param pvarDescription [in, optional] {@code Object}
      */
     @ComMethod(name = "msSiteModeSetIconOverlay", dispId = 0x2c)
     void msSiteModeSetIconOverlay(String IconUrl,
@@ -383,6 +429,7 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x33)</p>
      * <p>vtableId(56)</p>
+     * @param bstrHeader [in] {@code String}
      */
     @ComMethod(name = "msSiteModeCreateJumpList", dispId = 0x33)
     void msSiteModeCreateJumpList(String bstrHeader);
@@ -390,6 +437,10 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x34)</p>
      * <p>vtableId(57)</p>
+     * @param bstrName [in] {@code String}
+     * @param bstrActionUri [in] {@code String}
+     * @param bstrIconUri [in] {@code String}
+     * @param pvarWindowType [in, optional] {@code Object}
      */
     @ComMethod(name = "msSiteModeAddJumpListItem", dispId = 0x34)
     void msSiteModeAddJumpListItem(String bstrName,
@@ -414,6 +465,9 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x36)</p>
      * <p>vtableId(60)</p>
+     * @param uiButtonID [in] {@code Object}
+     * @param bstrIconURL [in] {@code String}
+     * @param bstrTooltip [in] {@code String}
      */
     @ComMethod(name = "msSiteModeAddButtonStyle", dispId = 0x36)
     Object msSiteModeAddButtonStyle(Object uiButtonID,
@@ -423,6 +477,8 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x37)</p>
      * <p>vtableId(61)</p>
+     * @param uiButtonID [in] {@code Object}
+     * @param uiStyleID [in] {@code Object}
      */
     @ComMethod(name = "msSiteModeShowButtonStyle", dispId = 0x37)
     void msSiteModeShowButtonStyle(Object uiButtonID,
@@ -438,6 +494,7 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x3b)</p>
      * <p>vtableId(63)</p>
+     * @param fPreserveState [in] {@code Boolean}
      */
     @ComMethod(name = "msIsSiteModeFirstRun", dispId = 0x3b)
     Object msIsSiteModeFirstRun(Boolean fPreserveState);
@@ -445,6 +502,8 @@ public interface IShellUIHelper4 extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x39)</p>
      * <p>vtableId(64)</p>
+     * @param URL [in] {@code String}
+     * @param bstrFilterName [in] {@code String}
      */
     @ComMethod(name = "msAddTrackingProtectionList", dispId = 0x39)
     void msAddTrackingProtectionList(String URL,

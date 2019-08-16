@@ -16,48 +16,57 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface SmartTagRecognizer extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x94)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Application", dispId = 0x94)
     Application getApplication();
             
     /**
      * <p>id(0x95)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Creator", dispId = 0x95)
     XlCreator getCreator();
             
     /**
      * <p>id(0x96)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Parent", dispId = 0x96)
     com.sun.jna.platform.win32.COM.util.IDispatch getParent();
             
     /**
      * <p>id(0x258)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Enabled", dispId = 0x258)
     Boolean getEnabled();
             
     /**
      * <p>id(0x258)</p>
+     * <p>vtableId(11)</p>
+     * @param param0 [in] {@code Boolean}
      */
     @ComProperty(name = "Enabled", dispId = 0x258)
     void setEnabled(Boolean param0);
             
     /**
      * <p>id(0x8a8)</p>
+     * <p>vtableId(12)</p>
      */
     @ComProperty(name = "progID", dispId = 0x8a8)
     String getProgID();
             
     /**
      * <p>id(0x0)</p>
+     * <p>vtableId(13)</p>
      */
     @ComProperty(name = "_Default", dispId = 0x0)
     String get_Default();
             
     /**
      * <p>id(0x121)</p>
+     * <p>vtableId(14)</p>
      */
     @ComProperty(name = "FullName", dispId = 0x121)
     String getFullName();

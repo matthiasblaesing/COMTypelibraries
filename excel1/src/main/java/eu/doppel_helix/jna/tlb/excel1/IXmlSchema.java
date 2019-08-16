@@ -16,36 +16,48 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IXmlSchema extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x94)</p>
+     * <p>vtableId(7)</p>
+     * @param RHS [out] {@code Application}
      */
     @ComProperty(name = "Application", dispId = 0x94)
     com.sun.jna.platform.win32.WinNT.HRESULT getApplication(VARIANT RHS);
             
     /**
      * <p>id(0x95)</p>
+     * <p>vtableId(8)</p>
+     * @param RHS [out] {@code XlCreator}
      */
     @ComProperty(name = "Creator", dispId = 0x95)
     com.sun.jna.platform.win32.WinNT.HRESULT getCreator(VARIANT RHS);
             
     /**
      * <p>id(0x96)</p>
+     * <p>vtableId(9)</p>
+     * @param RHS [out] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
      */
     @ComProperty(name = "Parent", dispId = 0x96)
     com.sun.jna.platform.win32.WinNT.HRESULT getParent(VARIANT RHS);
             
     /**
      * <p>id(0x91c)</p>
+     * <p>vtableId(10)</p>
+     * @param RHS [out] {@code XmlNamespace}
      */
     @ComProperty(name = "Namespace", dispId = 0x91c)
     com.sun.jna.platform.win32.WinNT.HRESULT getNamespace(VARIANT RHS);
             
     /**
      * <p>id(0x91d)</p>
+     * <p>vtableId(11)</p>
+     * @param RHS [out] {@code String}
      */
     @ComProperty(name = "XML", dispId = 0x91d)
     com.sun.jna.platform.win32.WinNT.HRESULT getXML(VARIANT RHS);
             
     /**
      * <p>id(0x6e)</p>
+     * <p>vtableId(12)</p>
+     * @param RHS [out] {@code String}
      */
     @ComProperty(name = "Name", dispId = 0x6e)
     com.sun.jna.platform.win32.WinNT.HRESULT getName(VARIANT RHS);

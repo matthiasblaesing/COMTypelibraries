@@ -16,18 +16,24 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IHeaderFooter extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x8a)</p>
+     * <p>vtableId(7)</p>
+     * @param RHS [out] {@code String}
      */
     @ComProperty(name = "Text", dispId = 0x8a)
     com.sun.jna.platform.win32.WinNT.HRESULT getText(VARIANT RHS);
             
     /**
      * <p>id(0x8a)</p>
+     * <p>vtableId(8)</p>
+     * @param RHS [in] {@code String}
      */
     @ComProperty(name = "Text", dispId = 0x8a)
     com.sun.jna.platform.win32.WinNT.HRESULT setText(String RHS);
             
     /**
      * <p>id(0x1df)</p>
+     * <p>vtableId(9)</p>
+     * @param RHS [out] {@code Graphic}
      */
     @ComProperty(name = "Picture", dispId = 0x1df)
     com.sun.jna.platform.win32.WinNT.HRESULT getPicture(VARIANT RHS);

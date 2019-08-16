@@ -16,18 +16,22 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface ILicValidator extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Products", dispId = 0x1)
     Object getProducts();
             
     /**
      * <p>id(0x2)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Selection", dispId = 0x2)
     Integer getSelection();
             
     /**
      * <p>id(0x2)</p>
+     * <p>vtableId(9)</p>
+     * @param param0 [in] {@code Integer}
      */
     @ComProperty(name = "Selection", dispId = 0x2)
     void setSelection(Integer param0);

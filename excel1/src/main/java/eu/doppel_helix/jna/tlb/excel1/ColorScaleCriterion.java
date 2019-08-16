@@ -16,36 +16,44 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface ColorScaleCriterion extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1e6)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Index", dispId = 0x1e6)
     Integer getIndex();
             
     /**
      * <p>id(0x6c)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Type", dispId = 0x6c)
     XlConditionValueTypes getType();
             
     /**
      * <p>id(0x6c)</p>
+     * <p>vtableId(9)</p>
+     * @param param0 [in] {@code XlConditionValueTypes}
      */
     @ComProperty(name = "Type", dispId = 0x6c)
     void setType(XlConditionValueTypes param0);
             
     /**
      * <p>id(0x6)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Value", dispId = 0x6)
     Object getValue();
             
     /**
      * <p>id(0x6)</p>
+     * <p>vtableId(11)</p>
+     * @param param0 [in] {@code Object}
      */
     @ComProperty(name = "Value", dispId = 0x6)
     void setValue(Object param0);
             
     /**
      * <p>id(0xa9d)</p>
+     * <p>vtableId(12)</p>
      */
     @ComProperty(name = "FormatColor", dispId = 0xa9d)
     FormatColor getFormatColor();

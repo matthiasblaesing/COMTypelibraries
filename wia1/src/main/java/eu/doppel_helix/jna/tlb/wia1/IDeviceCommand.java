@@ -18,6 +18,7 @@ public interface IDeviceCommand extends IUnknown, IRawDispatchHandle, IDispatch 
      * Returns the commandID for this Command
      *
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "CommandID", dispId = 0x1)
     String getCommandID();
@@ -26,6 +27,7 @@ public interface IDeviceCommand extends IUnknown, IRawDispatchHandle, IDispatch 
      * Returns the command Name
      *
      * <p>id(0x2)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Name", dispId = 0x2)
     String getName();
@@ -34,6 +36,7 @@ public interface IDeviceCommand extends IUnknown, IRawDispatchHandle, IDispatch 
      * Returns the command Description
      *
      * <p>id(0x3)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Description", dispId = 0x3)
     String getDescription();

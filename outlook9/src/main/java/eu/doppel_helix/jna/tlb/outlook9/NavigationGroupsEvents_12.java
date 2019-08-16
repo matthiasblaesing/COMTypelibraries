@@ -16,12 +16,14 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface NavigationGroupsEvents_12 extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xfbca)</p>
+     * @param NavigationFolder [in] {@code NavigationFolder}
      */
     @ComMethod(name = "SelectedChange", dispId = 0xfbca)
     void SelectedChange(NavigationFolder NavigationFolder);
             
     /**
      * <p>id(0xfbcb)</p>
+     * @param NavigationFolder [in] {@code NavigationFolder}
      */
     @ComMethod(name = "NavigationFolderAdd", dispId = 0xfbcb)
     void NavigationFolderAdd(NavigationFolder NavigationFolder);

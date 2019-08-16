@@ -18,6 +18,9 @@ public interface IAssistance extends IUnknown, IRawDispatchHandle, IDispatch {
      * ShowHelp Method
      *
      * <p>id(0x60020000)</p>
+     * <p>vtableId(7)</p>
+     * @param HelpId [in, optional] {@code String}
+     * @param Scope [in, optional] {@code String}
      */
     @ComMethod(name = "ShowHelp", dispId = 0x60020000)
     void ShowHelp(String HelpId,
@@ -27,6 +30,9 @@ public interface IAssistance extends IUnknown, IRawDispatchHandle, IDispatch {
      * SearchHelp Method
      *
      * <p>id(0x60020001)</p>
+     * <p>vtableId(8)</p>
+     * @param Query [in] {@code String}
+     * @param Scope [in, optional] {@code String}
      */
     @ComMethod(name = "SearchHelp", dispId = 0x60020001)
     void SearchHelp(String Query,
@@ -36,6 +42,8 @@ public interface IAssistance extends IUnknown, IRawDispatchHandle, IDispatch {
      * SetDefaultContext Method
      *
      * <p>id(0x60020002)</p>
+     * <p>vtableId(9)</p>
+     * @param HelpId [in] {@code String}
      */
     @ComMethod(name = "SetDefaultContext", dispId = 0x60020002)
     void SetDefaultContext(String HelpId);
@@ -44,6 +52,8 @@ public interface IAssistance extends IUnknown, IRawDispatchHandle, IDispatch {
      * ClearDefaultContext Method
      *
      * <p>id(0x60020003)</p>
+     * <p>vtableId(10)</p>
+     * @param HelpId [in] {@code String}
      */
     @ComMethod(name = "ClearDefaultContext", dispId = 0x60020003)
     void ClearDefaultContext(String HelpId);

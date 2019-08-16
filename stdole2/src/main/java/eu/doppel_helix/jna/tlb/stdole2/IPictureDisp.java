@@ -16,6 +16,16 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IPictureDisp extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x6)</p>
+     * @param hdc [] {@code Integer}
+     * @param x [] {@code Integer}
+     * @param y [] {@code Integer}
+     * @param cx [] {@code Integer}
+     * @param cy [] {@code Integer}
+     * @param xSrc [] {@code Integer}
+     * @param ySrc [] {@code Integer}
+     * @param cxSrc [] {@code Integer}
+     * @param cySrc [] {@code Integer}
+     * @param prcWBounds [] {@code Object}
      */
     @ComMethod(name = "Render", dispId = 0x6)
     void Render(Integer hdc,

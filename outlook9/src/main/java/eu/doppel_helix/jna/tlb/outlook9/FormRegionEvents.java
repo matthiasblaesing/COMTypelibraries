@@ -16,6 +16,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface FormRegionEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xfb38)</p>
+     * @param Expand [in] {@code Boolean}
      */
     @ComMethod(name = "Expanded", dispId = 0xfb38)
     void Expanded(Boolean Expand);

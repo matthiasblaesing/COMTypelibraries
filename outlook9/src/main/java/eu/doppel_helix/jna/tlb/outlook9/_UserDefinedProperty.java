@@ -16,54 +16,63 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface _UserDefinedProperty extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xf000)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Application", dispId = 0xf000)
     _Application getApplication();
             
     /**
      * <p>id(0xf00a)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Class", dispId = 0xf00a)
     OlObjectClass get_Class();
             
     /**
      * <p>id(0xf00b)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Session", dispId = 0xf00b)
     _NameSpace getSession();
             
     /**
      * <p>id(0xf001)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Parent", dispId = 0xf001)
     com.sun.jna.platform.win32.COM.util.IDispatch getParent();
             
     /**
      * <p>id(0x67)</p>
+     * <p>vtableId(11)</p>
      */
     @ComProperty(name = "Formula", dispId = 0x67)
     String getFormula();
             
     /**
      * <p>id(0x70)</p>
+     * <p>vtableId(12)</p>
      */
     @ComProperty(name = "Name", dispId = 0x70)
     String getName();
             
     /**
      * <p>id(0x6d)</p>
+     * <p>vtableId(13)</p>
      */
     @ComProperty(name = "Type", dispId = 0x6d)
     OlUserPropertyType getType();
             
     /**
      * <p>id(0xfa27)</p>
+     * <p>vtableId(14)</p>
      */
     @ComProperty(name = "DisplayFormat", dispId = 0xfa27)
     Integer getDisplayFormat();
             
     /**
      * <p>id(0xfc0b)</p>
+     * <p>vtableId(15)</p>
      */
     @ComMethod(name = "Delete", dispId = 0xfc0b)
     void Delete();

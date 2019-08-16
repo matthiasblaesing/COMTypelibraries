@@ -84,6 +84,7 @@ public interface IShellNameSpace extends IUnknown, IRawDispatchHandle, IDispatch
      *
      * <p>id(0x8)</p>
      * <p>vtableId(14)</p>
+     * @param strCommand [in] {@code String}
      */
     @ComMethod(name = "InvokeContextMenuCommand", dispId = 0x8)
     void InvokeContextMenuCommand(String strCommand);
@@ -129,6 +130,7 @@ public interface IShellNameSpace extends IUnknown, IRawDispatchHandle, IDispatch
      *
      * <p>id(0xd)</p>
      * <p>vtableId(19)</p>
+     * @param bstrFullPath [in] {@code String}
      */
     @ComMethod(name = "SetRoot", dispId = 0xd)
     void SetRoot(String bstrFullPath);
@@ -147,6 +149,7 @@ public interface IShellNameSpace extends IUnknown, IRawDispatchHandle, IDispatch
      *
      * <p>id(0xe)</p>
      * <p>vtableId(21)</p>
+     * @param param0 [in] {@code Integer}
      */
     @ComProperty(name = "EnumOptions", dispId = 0xe)
     void setEnumOptions(Integer param0);
@@ -165,6 +168,7 @@ public interface IShellNameSpace extends IUnknown, IRawDispatchHandle, IDispatch
      *
      * <p>id(0xf)</p>
      * <p>vtableId(23)</p>
+     * @param param0 [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
      */
     @ComProperty(name = "SelectedItem", dispId = 0xf)
     void setSelectedItem(com.sun.jna.platform.win32.COM.util.IDispatch param0);
@@ -183,6 +187,7 @@ public interface IShellNameSpace extends IUnknown, IRawDispatchHandle, IDispatch
      *
      * <p>id(0x10)</p>
      * <p>vtableId(25)</p>
+     * @param param0 [in] {@code Object}
      */
     @ComProperty(name = "Root", dispId = 0x10)
     void setRoot(Object param0);
@@ -197,6 +202,7 @@ public interface IShellNameSpace extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x11)</p>
      * <p>vtableId(27)</p>
+     * @param param0 [in] {@code Integer}
      */
     @ComProperty(name = "Depth", dispId = 0x11)
     void setDepth(Integer param0);
@@ -211,6 +217,7 @@ public interface IShellNameSpace extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x12)</p>
      * <p>vtableId(29)</p>
+     * @param param0 [in] {@code Integer}
      */
     @ComProperty(name = "Mode", dispId = 0x12)
     void setMode(Integer param0);
@@ -225,6 +232,7 @@ public interface IShellNameSpace extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x13)</p>
      * <p>vtableId(31)</p>
+     * @param param0 [in] {@code Integer}
      */
     @ComProperty(name = "Flags", dispId = 0x13)
     void setFlags(Integer param0);
@@ -232,6 +240,7 @@ public interface IShellNameSpace extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x14)</p>
      * <p>vtableId(32)</p>
+     * @param param0 [in] {@code Integer}
      */
     @ComProperty(name = "TVFlags", dispId = 0x14)
     void setTVFlags(Integer param0);
@@ -253,6 +262,7 @@ public interface IShellNameSpace extends IUnknown, IRawDispatchHandle, IDispatch
     /**
      * <p>id(0x15)</p>
      * <p>vtableId(35)</p>
+     * @param param0 [in] {@code String}
      */
     @ComProperty(name = "Columns", dispId = 0x15)
     void setColumns(String param0);
@@ -271,6 +281,7 @@ public interface IShellNameSpace extends IUnknown, IRawDispatchHandle, IDispatch
      *
      * <p>id(0x17)</p>
      * <p>vtableId(37)</p>
+     * @param iType [in] {@code Integer}
      */
     @ComMethod(name = "SetViewType", dispId = 0x17)
     void SetViewType(Integer iType);
@@ -289,6 +300,8 @@ public interface IShellNameSpace extends IUnknown, IRawDispatchHandle, IDispatch
      *
      * <p>id(0x19)</p>
      * <p>vtableId(39)</p>
+     * @param var [in] {@code Object}
+     * @param iDepth [] {@code Integer}
      */
     @ComMethod(name = "Expand", dispId = 0x19)
     void Expand(Object var,

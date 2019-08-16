@@ -16,24 +16,33 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IConditionValue extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x94)</p>
+     * <p>vtableId(7)</p>
+     * @param RHS [out] {@code Application}
      */
     @ComProperty(name = "Application", dispId = 0x94)
     com.sun.jna.platform.win32.WinNT.HRESULT getApplication(VARIANT RHS);
             
     /**
      * <p>id(0x95)</p>
+     * <p>vtableId(8)</p>
+     * @param RHS [out] {@code XlCreator}
      */
     @ComProperty(name = "Creator", dispId = 0x95)
     com.sun.jna.platform.win32.WinNT.HRESULT getCreator(VARIANT RHS);
             
     /**
      * <p>id(0x96)</p>
+     * <p>vtableId(9)</p>
+     * @param RHS [out] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
      */
     @ComProperty(name = "Parent", dispId = 0x96)
     com.sun.jna.platform.win32.WinNT.HRESULT getParent(VARIANT RHS);
             
     /**
      * <p>id(0x62d)</p>
+     * <p>vtableId(10)</p>
+     * @param newtype [in] {@code XlConditionValueTypes}
+     * @param newvalue [in, optional] {@code Object}
      */
     @ComMethod(name = "Modify", dispId = 0x62d)
     com.sun.jna.platform.win32.WinNT.HRESULT Modify(XlConditionValueTypes newtype,
@@ -41,12 +50,16 @@ public interface IConditionValue extends IUnknown, IRawDispatchHandle, IDispatch
             
     /**
      * <p>id(0x6c)</p>
+     * <p>vtableId(11)</p>
+     * @param RHS [out] {@code XlConditionValueTypes}
      */
     @ComProperty(name = "Type", dispId = 0x6c)
     com.sun.jna.platform.win32.WinNT.HRESULT getType(VARIANT RHS);
             
     /**
      * <p>id(0x6)</p>
+     * <p>vtableId(12)</p>
+     * @param RHS [out] {@code Object}
      */
     @ComProperty(name = "Value", dispId = 0x6)
     com.sun.jna.platform.win32.WinNT.HRESULT getValue(VARIANT RHS);

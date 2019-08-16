@@ -20,6 +20,7 @@ public interface DShellWindowsEvents extends IUnknown, IRawDispatchHandle, IDisp
      * A new window was registered.
      *
      * <p>id(0xc8)</p>
+     * @param lCookie [in] {@code Integer}
      */
     @ComMethod(name = "WindowRegistered", dispId = 0xc8)
     void WindowRegistered(Integer lCookie);
@@ -28,6 +29,7 @@ public interface DShellWindowsEvents extends IUnknown, IRawDispatchHandle, IDisp
      * A new window was revoked.
      *
      * <p>id(0xc9)</p>
+     * @param lCookie [in] {@code Integer}
      */
     @ComMethod(name = "WindowRevoked", dispId = 0xc9)
     void WindowRevoked(Integer lCookie);

@@ -96,6 +96,7 @@ public interface IScriptErrorList extends IUnknown, IRawDispatchHandle, IDispatc
     /**
      * <p>id(0x14)</p>
      * <p>vtableId(18)</p>
+     * @param fDetailsPaneOpen [] {@code Integer}
      */
     @ComMethod(name = "setDetailsPaneOpen", dispId = 0x14)
     void setDetailsPaneOpen(Integer fDetailsPaneOpen);
@@ -110,6 +111,7 @@ public interface IScriptErrorList extends IUnknown, IRawDispatchHandle, IDispatc
     /**
      * <p>id(0x16)</p>
      * <p>vtableId(20)</p>
+     * @param fPerErrorDisplay [] {@code Integer}
      */
     @ComMethod(name = "setPerErrorDisplay", dispId = 0x16)
     void setPerErrorDisplay(Integer fPerErrorDisplay);

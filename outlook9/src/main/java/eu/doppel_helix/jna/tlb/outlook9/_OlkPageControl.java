@@ -16,12 +16,15 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface _OlkPageControl extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xfbd1)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Page", dispId = 0xfbd1)
     OlPageType getPage();
             
     /**
      * <p>id(0xfbd1)</p>
+     * <p>vtableId(8)</p>
+     * @param param0 [in] {@code OlPageType}
      */
     @ComProperty(name = "Page", dispId = 0xfbd1)
     void setPage(OlPageType param0);

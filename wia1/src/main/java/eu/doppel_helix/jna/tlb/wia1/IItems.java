@@ -18,6 +18,8 @@ public interface IItems extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the specified item in the collection by position
      *
      * <p>id(0x0)</p>
+     * <p>vtableId(7)</p>
+     * @param Index [in] {@code Integer}
      */
     @ComProperty(name = "Item", dispId = 0x0)
     IItem getItem(Integer Index);
@@ -26,6 +28,7 @@ public interface IItems extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the number of members in the collection
      *
      * <p>id(0x1)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Count", dispId = 0x1)
     Integer getCount();
@@ -34,6 +37,9 @@ public interface IItems extends IUnknown, IRawDispatchHandle, IDispatch {
      * Adds a new Item with the specified Name and Flags. The Flags value is created by using the OR operation with members of the WiaItemFlags enumeration.
      *
      * <p>id(0x2)</p>
+     * <p>vtableId(10)</p>
+     * @param Name [in] {@code String}
+     * @param Flags [in] {@code Integer}
      */
     @ComMethod(name = "Add", dispId = 0x2)
     void Add(String Name,
@@ -43,6 +49,8 @@ public interface IItems extends IUnknown, IRawDispatchHandle, IDispatch {
      * Removes the designated Item
      *
      * <p>id(0x3)</p>
+     * <p>vtableId(11)</p>
+     * @param Index [in] {@code Integer}
      */
     @ComMethod(name = "Remove", dispId = 0x3)
     void Remove(Integer Index);

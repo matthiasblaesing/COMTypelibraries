@@ -18,6 +18,7 @@ public interface IDeviceEvent extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the EventID for this Event
      *
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "EventID", dispId = 0x1)
     String getEventID();
@@ -26,6 +27,7 @@ public interface IDeviceEvent extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the Type of this Event
      *
      * <p>id(0x2)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Type", dispId = 0x2)
     WiaEventFlag getType();
@@ -34,6 +36,7 @@ public interface IDeviceEvent extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the event Name
      *
      * <p>id(0x3)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Name", dispId = 0x3)
     String getName();
@@ -42,6 +45,7 @@ public interface IDeviceEvent extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the event Description
      *
      * <p>id(0x4)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Description", dispId = 0x4)
     String getDescription();

@@ -16,12 +16,16 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IRefreshEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x63c)</p>
+     * <p>vtableId(7)</p>
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeRefresh", dispId = 0x63c)
     com.sun.jna.platform.win32.WinNT.HRESULT BeforeRefresh(VARIANT Cancel);
             
     /**
      * <p>id(0x63d)</p>
+     * <p>vtableId(8)</p>
+     * @param Success [in] {@code Boolean}
      */
     @ComMethod(name = "AfterRefresh", dispId = 0x63d)
     com.sun.jna.platform.win32.WinNT.HRESULT AfterRefresh(Boolean Success);

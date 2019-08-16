@@ -16,6 +16,10 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface ICTPFactory extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
+     * @param CTPAxID [in] {@code String}
+     * @param CTPTitle [in] {@code String}
+     * @param CTPParentWindow [in, optional] {@code Object}
      */
     @ComMethod(name = "CreateCTP", dispId = 0x1)
     _CustomTaskPane CreateCTP(String CTPAxID,

@@ -16,6 +16,8 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface NameSpaceEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xf005)</p>
+     * @param Pages [in] {@code PropertyPages}
+     * @param Folder [in] {@code MAPIFolder}
      */
     @ComMethod(name = "OptionsPagesAdd", dispId = 0xf005)
     void OptionsPagesAdd(PropertyPages Pages,

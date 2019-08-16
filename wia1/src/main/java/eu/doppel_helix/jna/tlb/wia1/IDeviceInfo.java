@@ -18,6 +18,7 @@ public interface IDeviceInfo extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the DeviceID for this Device
      *
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "DeviceID", dispId = 0x1)
     String getDeviceID();
@@ -26,6 +27,7 @@ public interface IDeviceInfo extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the Type of Device
      *
      * <p>id(0x2)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Type", dispId = 0x2)
     WiaDeviceType getType();
@@ -34,6 +36,7 @@ public interface IDeviceInfo extends IUnknown, IRawDispatchHandle, IDispatch {
      * A collection of all properties for this imaging device that are applicable when the device is not connected
      *
      * <p>id(0x3)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Properties", dispId = 0x3)
     IProperties getProperties();
@@ -42,6 +45,7 @@ public interface IDeviceInfo extends IUnknown, IRawDispatchHandle, IDispatch {
      * Establish a connection with this device and return a Device object
      *
      * <p>id(0x4)</p>
+     * <p>vtableId(10)</p>
      */
     @ComMethod(name = "Connect", dispId = 0x4)
     IDevice Connect();

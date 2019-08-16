@@ -16,6 +16,8 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface ApplicationEvents_10 extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xf002)</p>
+     * @param Item [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "ItemSend", dispId = 0xf002)
     com.sun.jna.platform.win32.WinNT.HRESULT ItemSend(com.sun.jna.platform.win32.COM.util.IDispatch Item,
@@ -29,12 +31,14 @@ public interface ApplicationEvents_10 extends IUnknown, IRawDispatchHandle, IDis
             
     /**
      * <p>id(0xf004)</p>
+     * @param Item [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
      */
     @ComMethod(name = "Reminder", dispId = 0xf004)
     com.sun.jna.platform.win32.WinNT.HRESULT Reminder(com.sun.jna.platform.win32.COM.util.IDispatch Item);
             
     /**
      * <p>id(0xf005)</p>
+     * @param Pages [in] {@code PropertyPages}
      */
     @ComMethod(name = "OptionsPagesAdd", dispId = 0xf005)
     com.sun.jna.platform.win32.WinNT.HRESULT OptionsPagesAdd(PropertyPages Pages);
@@ -53,12 +57,14 @@ public interface ApplicationEvents_10 extends IUnknown, IRawDispatchHandle, IDis
             
     /**
      * <p>id(0xfa6a)</p>
+     * @param SearchObject [in] {@code Search}
      */
     @ComMethod(name = "AdvancedSearchComplete", dispId = 0xfa6a)
     void AdvancedSearchComplete(Search SearchObject);
             
     /**
      * <p>id(0xfa6b)</p>
+     * @param SearchObject [in] {@code Search}
      */
     @ComMethod(name = "AdvancedSearchStopped", dispId = 0xfa6b)
     void AdvancedSearchStopped(Search SearchObject);

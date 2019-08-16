@@ -16,24 +16,35 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface ContactCard extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x60020000)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Application", dispId = 0x60020000)
     com.sun.jna.platform.win32.COM.util.IDispatch getApplication();
             
     /**
      * <p>id(0x60020001)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Creator", dispId = 0x60020001)
     Integer getCreator();
             
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(9)</p>
      */
     @ComMethod(name = "Close", dispId = 0x1)
     void Close();
             
     /**
      * <p>id(0x2)</p>
+     * <p>vtableId(10)</p>
+     * @param CardStyle [in] {@code MsoContactCardStyle}
+     * @param RectangleLeft [in] {@code Integer}
+     * @param RectangleRight [in] {@code Integer}
+     * @param RectangleTop [in] {@code Integer}
+     * @param RectangleBottom [in] {@code Integer}
+     * @param HorizontalPosition [in] {@code Integer}
+     * @param ShowWithDelay [in, optional] {@code Boolean}
      */
     @ComMethod(name = "Show", dispId = 0x2)
     void Show(MsoContactCardStyle CardStyle,

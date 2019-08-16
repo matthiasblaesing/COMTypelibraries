@@ -16,12 +16,17 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IIconCriteria extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x76)</p>
+     * <p>vtableId(7)</p>
+     * @param RHS [out] {@code Integer}
      */
     @ComProperty(name = "Count", dispId = 0x76)
     com.sun.jna.platform.win32.WinNT.HRESULT getCount(VARIANT RHS);
             
     /**
      * <p>id(0x0)</p>
+     * <p>vtableId(8)</p>
+     * @param Index [in] {@code Object}
+     * @param RHS [out] {@code IconCriterion}
      */
     @ComProperty(name = "_Default", dispId = 0x0)
     com.sun.jna.platform.win32.WinNT.HRESULT get_Default(Object Index,
@@ -29,6 +34,9 @@ public interface IIconCriteria extends IUnknown, IRawDispatchHandle, IDispatch {
             
     /**
      * <p>id(0xaa)</p>
+     * <p>vtableId(10)</p>
+     * @param Index [in] {@code Object}
+     * @param RHS [out] {@code IconCriterion}
      */
     @ComProperty(name = "Item", dispId = 0xaa)
     com.sun.jna.platform.win32.WinNT.HRESULT getItem(Object Index,

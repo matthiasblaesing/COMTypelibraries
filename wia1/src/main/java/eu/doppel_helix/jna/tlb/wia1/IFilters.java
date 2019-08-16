@@ -18,6 +18,8 @@ public interface IFilters extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the specified item in the collection by position or FilterID
      *
      * <p>id(0x0)</p>
+     * <p>vtableId(7)</p>
+     * @param Index [in] {@code Integer}
      */
     @ComProperty(name = "Item", dispId = 0x0)
     IFilter getItem(Integer Index);
@@ -26,6 +28,7 @@ public interface IFilters extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the number of members in the collection
      *
      * <p>id(0x1)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Count", dispId = 0x1)
     Integer getCount();
@@ -34,6 +37,9 @@ public interface IFilters extends IUnknown, IRawDispatchHandle, IDispatch {
      * Appends/Inserts a new Filter of the specified FilterID into a Filter collection
      *
      * <p>id(0x2)</p>
+     * <p>vtableId(10)</p>
+     * @param FilterID [in] {@code String}
+     * @param Index [in, optional] {@code Integer}
      */
     @ComMethod(name = "Add", dispId = 0x2)
     void Add(String FilterID,
@@ -43,6 +49,8 @@ public interface IFilters extends IUnknown, IRawDispatchHandle, IDispatch {
      * Removes the designated filter
      *
      * <p>id(0x3)</p>
+     * <p>vtableId(11)</p>
+     * @param Index [in] {@code Integer}
      */
     @ComMethod(name = "Remove", dispId = 0x3)
     void Remove(Integer Index);

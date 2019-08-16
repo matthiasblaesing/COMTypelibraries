@@ -16,6 +16,11 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IBlogExtensibility extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
+     * @param BlogProvider [out] {@code String}
+     * @param FriendlyName [out] {@code String}
+     * @param CategorySupport [out] {@code MsoBlogCategorySupport}
+     * @param Padding [out] {@code Boolean}
      */
     @ComMethod(name = "BlogProviderProperties", dispId = 0x1)
     void BlogProviderProperties(VARIANT BlogProvider,
@@ -25,6 +30,12 @@ public interface IBlogExtensibility extends IUnknown, IRawDispatchHandle, IDispa
             
     /**
      * <p>id(0x2)</p>
+     * <p>vtableId(8)</p>
+     * @param Account [in] {@code String}
+     * @param ParentWindow [in] {@code Integer}
+     * @param Document [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
+     * @param NewAccount [in] {@code Boolean}
+     * @param ShowPictureUI [out] {@code Boolean}
      */
     @ComMethod(name = "SetupBlogAccount", dispId = 0x2)
     void SetupBlogAccount(String Account,
@@ -35,6 +46,13 @@ public interface IBlogExtensibility extends IUnknown, IRawDispatchHandle, IDispa
             
     /**
      * <p>id(0x3)</p>
+     * <p>vtableId(9)</p>
+     * @param Account [in] {@code String}
+     * @param ParentWindow [in] {@code Integer}
+     * @param Document [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
+     * @param BlogNames [out] {@code String}
+     * @param BlogIDs [out] {@code String}
+     * @param BlogURLs [out] {@code String}
      */
     @ComMethod(name = "GetUserBlogs", dispId = 0x3)
     void GetUserBlogs(String Account,
@@ -46,6 +64,13 @@ public interface IBlogExtensibility extends IUnknown, IRawDispatchHandle, IDispa
             
     /**
      * <p>id(0x4)</p>
+     * <p>vtableId(10)</p>
+     * @param Account [in] {@code String}
+     * @param ParentWindow [in] {@code Integer}
+     * @param Document [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
+     * @param PostTitles [out] {@code String}
+     * @param PostDates [out] {@code String}
+     * @param PostIDs [out] {@code String}
      */
     @ComMethod(name = "GetRecentPosts", dispId = 0x4)
     void GetRecentPosts(String Account,
@@ -57,6 +82,14 @@ public interface IBlogExtensibility extends IUnknown, IRawDispatchHandle, IDispa
             
     /**
      * <p>id(0x5)</p>
+     * <p>vtableId(11)</p>
+     * @param Account [in] {@code String}
+     * @param PostID [in] {@code String}
+     * @param ParentWindow [in] {@code Integer}
+     * @param xHTML [out] {@code String}
+     * @param Title [out] {@code String}
+     * @param DatePosted [out] {@code String}
+     * @param Categories [out] {@code String}
      */
     @ComMethod(name = "Open", dispId = 0x5)
     void Open(String Account,
@@ -69,6 +102,17 @@ public interface IBlogExtensibility extends IUnknown, IRawDispatchHandle, IDispa
             
     /**
      * <p>id(0x6)</p>
+     * <p>vtableId(12)</p>
+     * @param Account [in] {@code String}
+     * @param ParentWindow [in] {@code Integer}
+     * @param Document [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
+     * @param xHTML [in] {@code String}
+     * @param Title [in] {@code String}
+     * @param DateTime [in] {@code String}
+     * @param Categories [in] {@code String}
+     * @param Draft [in] {@code Boolean}
+     * @param PostID [out] {@code String}
+     * @param PublishMessage [out] {@code String}
      */
     @ComMethod(name = "PublishPost", dispId = 0x6)
     void PublishPost(String Account,
@@ -84,6 +128,17 @@ public interface IBlogExtensibility extends IUnknown, IRawDispatchHandle, IDispa
             
     /**
      * <p>id(0x7)</p>
+     * <p>vtableId(13)</p>
+     * @param Account [in] {@code String}
+     * @param ParentWindow [in] {@code Integer}
+     * @param Document [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
+     * @param PostID [in] {@code String}
+     * @param xHTML [in] {@code String}
+     * @param Title [in] {@code String}
+     * @param DateTime [in] {@code String}
+     * @param Categories [in] {@code String}
+     * @param Draft [in] {@code Boolean}
+     * @param PublishMessage [out] {@code String}
      */
     @ComMethod(name = "RepublishPost", dispId = 0x7)
     void RepublishPost(String Account,
@@ -99,6 +154,11 @@ public interface IBlogExtensibility extends IUnknown, IRawDispatchHandle, IDispa
             
     /**
      * <p>id(0x8)</p>
+     * <p>vtableId(14)</p>
+     * @param Account [in] {@code String}
+     * @param ParentWindow [in] {@code Integer}
+     * @param Document [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
+     * @param Categories [out] {@code String}
      */
     @ComMethod(name = "GetCategories", dispId = 0x8)
     void GetCategories(String Account,

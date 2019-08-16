@@ -16,36 +16,42 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface FileExportConverter extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x94)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Application", dispId = 0x94)
     Application getApplication();
             
     /**
      * <p>id(0x95)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Creator", dispId = 0x95)
     XlCreator getCreator();
             
     /**
      * <p>id(0x96)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Parent", dispId = 0x96)
     com.sun.jna.platform.win32.COM.util.IDispatch getParent();
             
     /**
      * <p>id(0xad1)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Extensions", dispId = 0xad1)
     String getExtensions();
             
     /**
      * <p>id(0xda)</p>
+     * <p>vtableId(11)</p>
      */
     @ComProperty(name = "Description", dispId = 0xda)
     String getDescription();
             
     /**
      * <p>id(0x120)</p>
+     * <p>vtableId(12)</p>
      */
     @ComProperty(name = "FileFormat", dispId = 0x120)
     Integer getFileFormat();

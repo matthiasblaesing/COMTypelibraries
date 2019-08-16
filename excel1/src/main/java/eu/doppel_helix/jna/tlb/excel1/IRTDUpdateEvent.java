@@ -16,24 +16,29 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IRTDUpdateEvent extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xa)</p>
+     * <p>vtableId(7)</p>
      */
     @ComMethod(name = "UpdateNotify", dispId = 0xa)
     void UpdateNotify();
             
     /**
      * <p>id(0xb)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "HeartbeatInterval", dispId = 0xb)
     Integer getHeartbeatInterval();
             
     /**
      * <p>id(0xb)</p>
+     * <p>vtableId(9)</p>
+     * @param param0 [in] {@code Integer}
      */
     @ComProperty(name = "HeartbeatInterval", dispId = 0xb)
     void setHeartbeatInterval(Integer param0);
             
     /**
      * <p>id(0xc)</p>
+     * <p>vtableId(10)</p>
      */
     @ComMethod(name = "Disconnect", dispId = 0xc)
     void Disconnect();

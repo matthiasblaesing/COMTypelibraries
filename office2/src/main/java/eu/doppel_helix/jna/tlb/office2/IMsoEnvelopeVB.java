@@ -16,30 +16,36 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IMsoEnvelopeVB extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Introduction", dispId = 0x1)
     String getIntroduction();
             
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(8)</p>
+     * @param param0 [in] {@code String}
      */
     @ComProperty(name = "Introduction", dispId = 0x1)
     void setIntroduction(String param0);
             
     /**
      * <p>id(0x2)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Item", dispId = 0x2)
     com.sun.jna.platform.win32.COM.util.IDispatch getItem();
             
     /**
      * <p>id(0x3)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Parent", dispId = 0x3)
     com.sun.jna.platform.win32.COM.util.IDispatch getParent();
             
     /**
      * <p>id(0x4)</p>
+     * <p>vtableId(11)</p>
      */
     @ComProperty(name = "CommandBars", dispId = 0x4)
     com.sun.jna.platform.win32.COM.util.IDispatch getCommandBars();

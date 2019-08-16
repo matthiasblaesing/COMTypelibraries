@@ -16,60 +16,80 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IFilter extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x94)</p>
+     * <p>vtableId(7)</p>
+     * @param RHS [out] {@code Application}
      */
     @ComProperty(name = "Application", dispId = 0x94)
     com.sun.jna.platform.win32.WinNT.HRESULT getApplication(VARIANT RHS);
             
     /**
      * <p>id(0x95)</p>
+     * <p>vtableId(8)</p>
+     * @param RHS [out] {@code XlCreator}
      */
     @ComProperty(name = "Creator", dispId = 0x95)
     com.sun.jna.platform.win32.WinNT.HRESULT getCreator(VARIANT RHS);
             
     /**
      * <p>id(0x96)</p>
+     * <p>vtableId(9)</p>
+     * @param RHS [out] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
      */
     @ComProperty(name = "Parent", dispId = 0x96)
     com.sun.jna.platform.win32.WinNT.HRESULT getParent(VARIANT RHS);
             
     /**
      * <p>id(0x652)</p>
+     * <p>vtableId(10)</p>
+     * @param RHS [out] {@code Boolean}
      */
     @ComProperty(name = "On", dispId = 0x652)
     com.sun.jna.platform.win32.WinNT.HRESULT getOn(VARIANT RHS);
             
     /**
      * <p>id(0x31c)</p>
+     * <p>vtableId(11)</p>
+     * @param RHS [out] {@code Object}
      */
     @ComProperty(name = "Criteria1", dispId = 0x31c)
     com.sun.jna.platform.win32.WinNT.HRESULT getCriteria1(VARIANT RHS);
             
     /**
      * <p>id(0xa51)</p>
+     * <p>vtableId(12)</p>
+     * @param RHS [out] {@code XlAutoFilterOperator}
      */
     @ComProperty(name = "_Operator", dispId = 0xa51)
     com.sun.jna.platform.win32.WinNT.HRESULT get_Operator(VARIANT RHS);
             
     /**
      * <p>id(0x31e)</p>
+     * <p>vtableId(13)</p>
+     * @param RHS [out] {@code Object}
      */
     @ComProperty(name = "Criteria2", dispId = 0x31e)
     com.sun.jna.platform.win32.WinNT.HRESULT getCriteria2(VARIANT RHS);
             
     /**
      * <p>id(0x31d)</p>
+     * <p>vtableId(14)</p>
+     * @param RHS [out] {@code XlAutoFilterOperator}
      */
     @ComProperty(name = "Operator", dispId = 0x31d)
     com.sun.jna.platform.win32.WinNT.HRESULT getOperator(VARIANT RHS);
             
     /**
      * <p>id(0x31d)</p>
+     * <p>vtableId(15)</p>
+     * @param RHS [in] {@code XlAutoFilterOperator}
      */
     @ComProperty(name = "Operator", dispId = 0x31d)
     com.sun.jna.platform.win32.WinNT.HRESULT setOperator(XlAutoFilterOperator RHS);
             
     /**
      * <p>id(0x76)</p>
+     * <p>vtableId(16)</p>
+     * @param RHS [out] {@code Integer}
      */
     @ComProperty(name = "Count", dispId = 0x76)
     com.sun.jna.platform.win32.WinNT.HRESULT getCount(VARIANT RHS);

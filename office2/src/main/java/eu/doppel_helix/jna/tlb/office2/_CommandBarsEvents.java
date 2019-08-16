@@ -16,6 +16,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface _CommandBarsEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
      */
     @ComMethod(name = "OnUpdate", dispId = 0x1)
     void OnUpdate();

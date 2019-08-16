@@ -28,6 +28,10 @@ public interface OlkComboBoxEvents extends IUnknown, IRawDispatchHandle, IDispat
             
     /**
      * <p>id(0xfffffda3)</p>
+     * @param Button [in] {@code OlMouseButton}
+     * @param Shift [in] {@code OlShiftState}
+     * @param X [in] {@code Float}
+     * @param Y [in] {@code Float}
      */
     @ComMethod(name = "MouseDown", dispId = 0xfffffda3)
     void MouseDown(OlMouseButton Button,
@@ -37,6 +41,10 @@ public interface OlkComboBoxEvents extends IUnknown, IRawDispatchHandle, IDispat
             
     /**
      * <p>id(0xfffffda2)</p>
+     * @param Button [in] {@code OlMouseButton}
+     * @param Shift [in] {@code OlShiftState}
+     * @param X [in] {@code Float}
+     * @param Y [in] {@code Float}
      */
     @ComMethod(name = "MouseMove", dispId = 0xfffffda2)
     void MouseMove(OlMouseButton Button,
@@ -46,6 +54,10 @@ public interface OlkComboBoxEvents extends IUnknown, IRawDispatchHandle, IDispat
             
     /**
      * <p>id(0xfffffda1)</p>
+     * @param Button [in] {@code OlMouseButton}
+     * @param Shift [in] {@code OlShiftState}
+     * @param X [in] {@code Float}
+     * @param Y [in] {@code Float}
      */
     @ComMethod(name = "MouseUp", dispId = 0xfffffda1)
     void MouseUp(OlMouseButton Button,
@@ -61,12 +73,15 @@ public interface OlkComboBoxEvents extends IUnknown, IRawDispatchHandle, IDispat
             
     /**
      * <p>id(0x80018203)</p>
+     * @param Cancel [in] {@code Boolean}
      */
     @ComMethod(name = "Exit", dispId = 0x80018203)
     void Exit(Boolean Cancel);
             
     /**
      * <p>id(0xfffffda6)</p>
+     * @param KeyCode [in] {@code Integer}
+     * @param Shift [in] {@code OlShiftState}
      */
     @ComMethod(name = "KeyDown", dispId = 0xfffffda6)
     void KeyDown(Integer KeyCode,
@@ -74,12 +89,15 @@ public interface OlkComboBoxEvents extends IUnknown, IRawDispatchHandle, IDispat
             
     /**
      * <p>id(0xfffffda5)</p>
+     * @param KeyAscii [in] {@code Integer}
      */
     @ComMethod(name = "KeyPress", dispId = 0xfffffda5)
     void KeyPress(Integer KeyAscii);
             
     /**
      * <p>id(0xfffffda4)</p>
+     * @param KeyCode [in] {@code Integer}
+     * @param Shift [in] {@code OlShiftState}
      */
     @ComMethod(name = "KeyUp", dispId = 0xfffffda4)
     void KeyUp(Integer KeyCode,
@@ -105,6 +123,7 @@ public interface OlkComboBoxEvents extends IUnknown, IRawDispatchHandle, IDispat
             
     /**
      * <p>id(0x80018201)</p>
+     * @param Cancel [in] {@code Boolean}
      */
     @ComMethod(name = "BeforeUpdate", dispId = 0x80018201)
     void BeforeUpdate(Boolean Cancel);

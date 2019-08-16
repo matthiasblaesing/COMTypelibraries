@@ -16,6 +16,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface AccountSelectorEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xfc73)</p>
+     * @param SelectedAccount [in] {@code Account}
      */
     @ComMethod(name = "SelectedAccountChange", dispId = 0xfc73)
     void SelectedAccountChange(Account SelectedAccount);

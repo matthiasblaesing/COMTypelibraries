@@ -16,6 +16,13 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface DShellNameSpaceEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1)</p>
+     * @param cItems [in] {@code Integer}
+     * @param hItem [in] {@code Integer}
+     * @param strName [in] {@code String}
+     * @param strUrl [in] {@code String}
+     * @param cVisits [in] {@code Integer}
+     * @param strDate [in] {@code String}
+     * @param fAvailableOffline [in] {@code Integer}
      */
     @ComMethod(name = "FavoritesSelectionChange", dispId = 0x1)
     void FavoritesSelectionChange(Integer cItems,

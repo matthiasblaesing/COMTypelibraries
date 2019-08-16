@@ -16,12 +16,14 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface ResultsEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xf001)</p>
+     * @param Item [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
      */
     @ComMethod(name = "ItemAdd", dispId = 0xf001)
     void ItemAdd(com.sun.jna.platform.win32.COM.util.IDispatch Item);
             
     /**
      * <p>id(0xf002)</p>
+     * @param Item [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
      */
     @ComMethod(name = "ItemChange", dispId = 0xf002)
     void ItemChange(com.sun.jna.platform.win32.COM.util.IDispatch Item);

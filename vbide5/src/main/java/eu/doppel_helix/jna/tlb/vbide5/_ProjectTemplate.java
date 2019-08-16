@@ -16,12 +16,14 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface _ProjectTemplate extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Application", dispId = 0x1)
     Application getApplication();
             
     /**
      * <p>id(0x2)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Parent", dispId = 0x2)
     Application getParent();

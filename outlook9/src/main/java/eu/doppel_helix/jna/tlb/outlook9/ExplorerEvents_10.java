@@ -28,6 +28,8 @@ public interface ExplorerEvents_10 extends IUnknown, IRawDispatchHandle, IDispat
             
     /**
      * <p>id(0xf003)</p>
+     * @param NewFolder [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeFolderSwitch", dispId = 0xf003)
     com.sun.jna.platform.win32.WinNT.HRESULT BeforeFolderSwitch(com.sun.jna.platform.win32.COM.util.IDispatch NewFolder,
@@ -41,6 +43,8 @@ public interface ExplorerEvents_10 extends IUnknown, IRawDispatchHandle, IDispat
             
     /**
      * <p>id(0xf005)</p>
+     * @param NewView [in] {@code Object}
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeViewSwitch", dispId = 0xf005)
     com.sun.jna.platform.win32.WinNT.HRESULT BeforeViewSwitch(Object NewView,
@@ -66,42 +70,51 @@ public interface ExplorerEvents_10 extends IUnknown, IRawDispatchHandle, IDispat
             
     /**
      * <p>id(0xfa11)</p>
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeMaximize", dispId = 0xfa11)
     com.sun.jna.platform.win32.WinNT.HRESULT BeforeMaximize(VARIANT Cancel);
             
     /**
      * <p>id(0xfa12)</p>
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeMinimize", dispId = 0xfa12)
     com.sun.jna.platform.win32.WinNT.HRESULT BeforeMinimize(VARIANT Cancel);
             
     /**
      * <p>id(0xfa13)</p>
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeMove", dispId = 0xfa13)
     com.sun.jna.platform.win32.WinNT.HRESULT BeforeMove(VARIANT Cancel);
             
     /**
      * <p>id(0xfa14)</p>
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeSize", dispId = 0xfa14)
     com.sun.jna.platform.win32.WinNT.HRESULT BeforeSize(VARIANT Cancel);
             
     /**
      * <p>id(0xfa0e)</p>
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeItemCopy", dispId = 0xfa0e)
     void BeforeItemCopy(VARIANT Cancel);
             
     /**
      * <p>id(0xfa0f)</p>
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeItemCut", dispId = 0xfa0f)
     void BeforeItemCut(VARIANT Cancel);
             
     /**
      * <p>id(0xfa10)</p>
+     * @param ClipboardContent [in] {@code Object}
+     * @param Target [in] {@code MAPIFolder}
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeItemPaste", dispId = 0xfa10)
     void BeforeItemPaste(Object ClipboardContent,
@@ -116,6 +129,7 @@ public interface ExplorerEvents_10 extends IUnknown, IRawDispatchHandle, IDispat
             
     /**
      * <p>id(0xfc92)</p>
+     * @param Item [] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
      */
     @ComMethod(name = "InlineResponse", dispId = 0xfc92)
     void InlineResponse(com.sun.jna.platform.win32.COM.util.IDispatch Item);

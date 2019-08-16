@@ -16,72 +16,84 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface WorkflowTask extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x60020000)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Application", dispId = 0x60020000)
     com.sun.jna.platform.win32.COM.util.IDispatch getApplication();
             
     /**
      * <p>id(0x60020001)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Creator", dispId = 0x60020001)
     Integer getCreator();
             
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Id", dispId = 0x1)
     String getId();
             
     /**
      * <p>id(0x2)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "ListID", dispId = 0x2)
     String getListID();
             
     /**
      * <p>id(0x3)</p>
+     * <p>vtableId(11)</p>
      */
     @ComProperty(name = "WorkflowID", dispId = 0x3)
     String getWorkflowID();
             
     /**
      * <p>id(0x4)</p>
+     * <p>vtableId(12)</p>
      */
     @ComProperty(name = "Name", dispId = 0x4)
     String getName();
             
     /**
      * <p>id(0x5)</p>
+     * <p>vtableId(13)</p>
      */
     @ComProperty(name = "Description", dispId = 0x5)
     String getDescription();
             
     /**
      * <p>id(0x6)</p>
+     * <p>vtableId(14)</p>
      */
     @ComProperty(name = "AssignedTo", dispId = 0x6)
     String getAssignedTo();
             
     /**
      * <p>id(0x7)</p>
+     * <p>vtableId(15)</p>
      */
     @ComProperty(name = "CreatedBy", dispId = 0x7)
     String getCreatedBy();
             
     /**
      * <p>id(0x8)</p>
+     * <p>vtableId(16)</p>
      */
     @ComProperty(name = "DueDate", dispId = 0x8)
     java.util.Date getDueDate();
             
     /**
      * <p>id(0x9)</p>
+     * <p>vtableId(17)</p>
      */
     @ComProperty(name = "CreatedDate", dispId = 0x9)
     java.util.Date getCreatedDate();
             
     /**
      * <p>id(0xa)</p>
+     * <p>vtableId(18)</p>
      */
     @ComMethod(name = "Show", dispId = 0xa)
     Integer Show();

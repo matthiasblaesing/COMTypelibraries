@@ -16,6 +16,9 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface ICommandBarButtonEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
+     * @param Ctrl [in] {@code CommandBarButton}
+     * @param CancelDefault [inout] {@code Boolean}
      */
     @ComMethod(name = "Click", dispId = 0x1)
     void Click(CommandBarButton Ctrl,

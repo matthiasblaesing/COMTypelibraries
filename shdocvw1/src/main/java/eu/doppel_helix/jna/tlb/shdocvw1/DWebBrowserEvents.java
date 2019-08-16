@@ -20,6 +20,12 @@ public interface DWebBrowserEvents extends IUnknown, IRawDispatchHandle, IDispat
      * Fired when a new hyperlink is being navigated to.
      *
      * <p>id(0x64)</p>
+     * @param URL [in] {@code String}
+     * @param Flags [] {@code Integer}
+     * @param TargetFrameName [] {@code String}
+     * @param PostData [] {@code Object}
+     * @param Headers [] {@code String}
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeNavigate", dispId = 0x64)
     void BeforeNavigate(String URL,
@@ -33,6 +39,7 @@ public interface DWebBrowserEvents extends IUnknown, IRawDispatchHandle, IDispat
      * Fired when the document being navigated to becomes visible and enters the navigation stack.
      *
      * <p>id(0x65)</p>
+     * @param URL [in] {@code String}
      */
     @ComMethod(name = "NavigateComplete", dispId = 0x65)
     void NavigateComplete(String URL);
@@ -41,6 +48,7 @@ public interface DWebBrowserEvents extends IUnknown, IRawDispatchHandle, IDispat
      * Statusbar text changed.
      *
      * <p>id(0x66)</p>
+     * @param Text [in] {@code String}
      */
     @ComMethod(name = "StatusTextChange", dispId = 0x66)
     void StatusTextChange(String Text);
@@ -49,6 +57,8 @@ public interface DWebBrowserEvents extends IUnknown, IRawDispatchHandle, IDispat
      * Fired when download progress is updated.
      *
      * <p>id(0x6c)</p>
+     * @param Progress [in] {@code Integer}
+     * @param ProgressMax [in] {@code Integer}
      */
     @ComMethod(name = "ProgressChange", dispId = 0x6c)
     void ProgressChange(Integer Progress,
@@ -66,6 +76,8 @@ public interface DWebBrowserEvents extends IUnknown, IRawDispatchHandle, IDispat
      * The enabled state of a command changed
      *
      * <p>id(0x69)</p>
+     * @param Command [in] {@code Integer}
+     * @param Enable [in] {@code Boolean}
      */
     @ComMethod(name = "CommandStateChange", dispId = 0x69)
     void CommandStateChange(Integer Command,
@@ -83,6 +95,12 @@ public interface DWebBrowserEvents extends IUnknown, IRawDispatchHandle, IDispat
      * Fired when a new window should be created.
      *
      * <p>id(0x6b)</p>
+     * @param URL [in] {@code String}
+     * @param Flags [in] {@code Integer}
+     * @param TargetFrameName [in] {@code String}
+     * @param PostData [in] {@code Object}
+     * @param Headers [in] {@code String}
+     * @param Processed [inout] {@code Boolean}
      */
     @ComMethod(name = "NewWindow", dispId = 0x6b)
     void NewWindow(String URL,
@@ -96,6 +114,7 @@ public interface DWebBrowserEvents extends IUnknown, IRawDispatchHandle, IDispat
      * Document title changed.
      *
      * <p>id(0x71)</p>
+     * @param Text [in] {@code String}
      */
     @ComMethod(name = "TitleChange", dispId = 0x71)
     void TitleChange(String Text);
@@ -104,6 +123,12 @@ public interface DWebBrowserEvents extends IUnknown, IRawDispatchHandle, IDispat
      * Fired when a new hyperlink is being navigated to in a frame.
      *
      * <p>id(0xc8)</p>
+     * @param URL [in] {@code String}
+     * @param Flags [] {@code Integer}
+     * @param TargetFrameName [] {@code String}
+     * @param PostData [] {@code Object}
+     * @param Headers [] {@code String}
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "FrameBeforeNavigate", dispId = 0xc8)
     void FrameBeforeNavigate(String URL,
@@ -117,6 +142,7 @@ public interface DWebBrowserEvents extends IUnknown, IRawDispatchHandle, IDispat
      * Fired when a new hyperlink is being navigated to in a frame.
      *
      * <p>id(0xc9)</p>
+     * @param URL [in] {@code String}
      */
     @ComMethod(name = "FrameNavigateComplete", dispId = 0xc9)
     void FrameNavigateComplete(String URL);
@@ -125,6 +151,12 @@ public interface DWebBrowserEvents extends IUnknown, IRawDispatchHandle, IDispat
      * Fired when a new window should be created.
      *
      * <p>id(0xcc)</p>
+     * @param URL [in] {@code String}
+     * @param Flags [in] {@code Integer}
+     * @param TargetFrameName [in] {@code String}
+     * @param PostData [in] {@code Object}
+     * @param Headers [in] {@code String}
+     * @param Processed [inout] {@code Boolean}
      */
     @ComMethod(name = "FrameNewWindow", dispId = 0xcc)
     void FrameNewWindow(String URL,
@@ -138,6 +170,7 @@ public interface DWebBrowserEvents extends IUnknown, IRawDispatchHandle, IDispat
      * Fired when application is quiting.
      *
      * <p>id(0x67)</p>
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "Quit", dispId = 0x67)
     void Quit(VARIANT Cancel);
@@ -170,6 +203,7 @@ public interface DWebBrowserEvents extends IUnknown, IRawDispatchHandle, IDispat
      * Fired when the PutProperty method has been called.
      *
      * <p>id(0x70)</p>
+     * @param Property [in] {@code String}
      */
     @ComMethod(name = "PropertyChange", dispId = 0x70)
     void PropertyChange(String Property);

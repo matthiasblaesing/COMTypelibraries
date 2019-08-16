@@ -22,6 +22,10 @@ public interface SyncObjectEvents extends IUnknown, IRawDispatchHandle, IDispatc
             
     /**
      * <p>id(0xf002)</p>
+     * @param State [in] {@code OlSyncState}
+     * @param Description [in] {@code String}
+     * @param Value [in] {@code Integer}
+     * @param Max [in] {@code Integer}
      */
     @ComMethod(name = "Progress", dispId = 0xf002)
     void Progress(OlSyncState State,
@@ -31,6 +35,8 @@ public interface SyncObjectEvents extends IUnknown, IRawDispatchHandle, IDispatc
             
     /**
      * <p>id(0xf003)</p>
+     * @param Code [in] {@code Integer}
+     * @param Description [in] {@code String}
      */
     @ComMethod(name = "OnError", dispId = 0xf003)
     void OnError(Integer Code,

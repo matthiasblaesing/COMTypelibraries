@@ -16,36 +16,42 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface Page extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x3fa)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "LeftHeader", dispId = 0x3fa)
     HeaderFooter getLeftHeader();
             
     /**
      * <p>id(0x3f3)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "CenterHeader", dispId = 0x3f3)
     HeaderFooter getCenterHeader();
             
     /**
      * <p>id(0x402)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "RightHeader", dispId = 0x402)
     HeaderFooter getRightHeader();
             
     /**
      * <p>id(0x3f9)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "LeftFooter", dispId = 0x3f9)
     HeaderFooter getLeftFooter();
             
     /**
      * <p>id(0x3f2)</p>
+     * <p>vtableId(11)</p>
      */
     @ComProperty(name = "CenterFooter", dispId = 0x3f2)
     HeaderFooter getCenterFooter();
             
     /**
      * <p>id(0x401)</p>
+     * <p>vtableId(12)</p>
      */
     @ComProperty(name = "RightFooter", dispId = 0x401)
     HeaderFooter getRightFooter();

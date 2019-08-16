@@ -18,6 +18,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IFontEventsDisp extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x9)</p>
+     * @param PropertyName [in] {@code String}
      */
     @ComMethod(name = "FontChanged", dispId = 0x9)
     void FontChanged(String PropertyName);

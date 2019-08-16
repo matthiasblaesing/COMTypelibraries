@@ -18,6 +18,7 @@ public interface IFilter extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the Filter Name
      *
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Name", dispId = 0x1)
     String getName();
@@ -26,6 +27,7 @@ public interface IFilter extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns a Description of what the filter does
      *
      * <p>id(0x2)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Description", dispId = 0x2)
     String getDescription();
@@ -34,6 +36,7 @@ public interface IFilter extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the FilterID for this Filter
      *
      * <p>id(0x3)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "FilterID", dispId = 0x3)
     String getFilterID();
@@ -42,6 +45,7 @@ public interface IFilter extends IUnknown, IRawDispatchHandle, IDispatch {
      * A collection of all properties for this filter
      *
      * <p>id(0x4)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Properties", dispId = 0x4)
     IProperties getProperties();

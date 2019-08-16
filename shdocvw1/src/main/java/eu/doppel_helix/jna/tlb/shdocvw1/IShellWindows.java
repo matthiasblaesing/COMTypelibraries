@@ -30,6 +30,7 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      *
      * <p>id(0x0)</p>
      * <p>vtableId(8)</p>
+     * @param index [in, optional] {@code Object}
      */
     @ComMethod(name = "Item", dispId = 0x0)
     com.sun.jna.platform.win32.COM.util.IDispatch Item(Object index);
@@ -39,6 +40,10 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      *
      * <p>id(0x60020003)</p>
      * <p>vtableId(10)</p>
+     * @param pid [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
+     * @param HWND [in] {@code Integer}
+     * @param swClass [in] {@code Integer}
+     * @param plCookie [out] {@code Integer}
      */
     @ComMethod(name = "Register", dispId = 0x60020003)
     void Register(com.sun.jna.platform.win32.COM.util.IDispatch pid,
@@ -51,6 +56,11 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      *
      * <p>id(0x60020004)</p>
      * <p>vtableId(11)</p>
+     * @param lThreadId [in] {@code Integer}
+     * @param pvarloc [in] {@code Object}
+     * @param pvarlocRoot [in] {@code Object}
+     * @param swClass [in] {@code Integer}
+     * @param plCookie [out] {@code Integer}
      */
     @ComMethod(name = "RegisterPending", dispId = 0x60020004)
     void RegisterPending(Integer lThreadId,
@@ -64,6 +74,7 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      *
      * <p>id(0x60020005)</p>
      * <p>vtableId(12)</p>
+     * @param lCookie [in] {@code Integer}
      */
     @ComMethod(name = "Revoke", dispId = 0x60020005)
     void Revoke(Integer lCookie);
@@ -73,6 +84,8 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      *
      * <p>id(0x60020006)</p>
      * <p>vtableId(13)</p>
+     * @param lCookie [in] {@code Integer}
+     * @param pvarloc [in] {@code Object}
      */
     @ComMethod(name = "OnNavigate", dispId = 0x60020006)
     void OnNavigate(Integer lCookie,
@@ -83,6 +96,8 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      *
      * <p>id(0x60020007)</p>
      * <p>vtableId(14)</p>
+     * @param lCookie [in] {@code Integer}
+     * @param fActive [in] {@code Boolean}
      */
     @ComMethod(name = "OnActivated", dispId = 0x60020007)
     void OnActivated(Integer lCookie,
@@ -93,6 +108,11 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      *
      * <p>id(0x60020008)</p>
      * <p>vtableId(15)</p>
+     * @param pvarloc [in] {@code Object}
+     * @param pvarlocRoot [in] {@code Object}
+     * @param swClass [in] {@code Integer}
+     * @param pHWND [out] {@code Integer}
+     * @param swfwOptions [in] {@code Integer}
      */
     @ComMethod(name = "FindWindowSW", dispId = 0x60020008)
     com.sun.jna.platform.win32.COM.util.IDispatch FindWindowSW(Object pvarloc,
@@ -106,6 +126,8 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      *
      * <p>id(0x60020009)</p>
      * <p>vtableId(16)</p>
+     * @param lCookie [in] {@code Integer}
+     * @param punk [in] {@code com.sun.jna.platform.win32.COM.util.IUnknown}
      */
     @ComMethod(name = "OnCreated", dispId = 0x60020009)
     void OnCreated(Integer lCookie,
@@ -116,6 +138,7 @@ public interface IShellWindows extends IUnknown, IRawDispatchHandle, IDispatch {
      *
      * <p>id(0x6002000a)</p>
      * <p>vtableId(17)</p>
+     * @param fAttach [in] {@code Boolean}
      */
     @ComMethod(name = "ProcessAttachDetach", dispId = 0x6002000a)
     void ProcessAttachDetach(Boolean fAttach);

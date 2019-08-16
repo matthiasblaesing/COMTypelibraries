@@ -18,6 +18,8 @@ public interface IVector extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns/Sets the specified item in the vector by position
      *
      * <p>id(0x0)</p>
+     * <p>vtableId(7)</p>
+     * @param Index [in] {@code Integer}
      */
     @ComProperty(name = "Item", dispId = 0x0)
     Object getItem(Integer Index);
@@ -26,6 +28,9 @@ public interface IVector extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns/Sets the specified item in the vector by position
      *
      * <p>id(0x0)</p>
+     * <p>vtableId(8)</p>
+     * @param Index [in] {@code Integer}
+     * @param param1 [in] {@code Object}
      */
     @ComProperty(name = "Item", dispId = 0x0)
     void setItem(Integer Index,
@@ -35,6 +40,7 @@ public interface IVector extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the number of members in the vector
      *
      * <p>id(0x1)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Count", dispId = 0x1)
     Integer getCount();
@@ -43,6 +49,9 @@ public interface IVector extends IUnknown, IRawDispatchHandle, IDispatch {
      * If the Vector of Bytes contains an image file, then Width and Height are ignored. Otherwise a Vector of Bytes must be RGB data and a Vector of Longs must be ARGB data. Returns a Picture object on success. See the ImageFile method for more details.
      *
      * <p>id(0x2)</p>
+     * <p>vtableId(11)</p>
+     * @param Width [in, optional] {@code Integer}
+     * @param Height [in, optional] {@code Integer}
      */
     @ComProperty(name = "Picture", dispId = 0x2)
     Object getPicture(Integer Width,
@@ -52,6 +61,9 @@ public interface IVector extends IUnknown, IRawDispatchHandle, IDispatch {
      * Used to get the Thumbnail property of an ImageFile which is an image file, The thumbnail property of an Item which is RGB data, or creating an ImageFile from raw ARGB data. Returns an ImageFile object on success. See the Picture method for more details.
      *
      * <p>id(0x3)</p>
+     * <p>vtableId(12)</p>
+     * @param Width [in, optional] {@code Integer}
+     * @param Height [in, optional] {@code Integer}
      */
     @ComProperty(name = "ImageFile", dispId = 0x3)
     IImageFile getImageFile(Integer Width,
@@ -61,6 +73,7 @@ public interface IVector extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns/Sets the Vector of Bytes as an array of bytes
      *
      * <p>id(0x4)</p>
+     * <p>vtableId(13)</p>
      */
     @ComProperty(name = "BinaryData", dispId = 0x4)
     Object getBinaryData();
@@ -69,6 +82,8 @@ public interface IVector extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns/Sets the Vector of Bytes as an array of bytes
      *
      * <p>id(0x4)</p>
+     * <p>vtableId(14)</p>
+     * @param param0 [in] {@code Object}
      */
     @ComProperty(name = "BinaryData", dispId = 0x4)
     void setBinaryData(Object param0);
@@ -77,6 +92,8 @@ public interface IVector extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns a Vector of Bytes as a String
      *
      * <p>id(0x5)</p>
+     * <p>vtableId(15)</p>
+     * @param Unicode [in, optional] {@code Boolean}
      */
     @ComProperty(name = "String", dispId = 0x5)
     String getString(Boolean Unicode);
@@ -85,6 +102,7 @@ public interface IVector extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns/Sets the Vector of Integers from a Date
      *
      * <p>id(0x6)</p>
+     * <p>vtableId(16)</p>
      */
     @ComProperty(name = "Date", dispId = 0x6)
     java.util.Date getDate();
@@ -93,6 +111,8 @@ public interface IVector extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns/Sets the Vector of Integers from a Date
      *
      * <p>id(0x6)</p>
+     * <p>vtableId(17)</p>
+     * @param param0 [in] {@code java.util.Date}
      */
     @ComProperty(name = "Date", dispId = 0x6)
     void setDate(java.util.Date param0);
@@ -101,6 +121,9 @@ public interface IVector extends IUnknown, IRawDispatchHandle, IDispatch {
      * If Index is not zero, Inserts a new element into the Vector collection before the specified Index. If Index is zero, Appends a new element to the Vector collection.
      *
      * <p>id(0x7)</p>
+     * <p>vtableId(19)</p>
+     * @param Value [in] {@code Object}
+     * @param Index [in, optional] {@code Integer}
      */
     @ComMethod(name = "Add", dispId = 0x7)
     void Add(Object Value,
@@ -110,6 +133,8 @@ public interface IVector extends IUnknown, IRawDispatchHandle, IDispatch {
      * Removes the designated element and returns it if successful
      *
      * <p>id(0x8)</p>
+     * <p>vtableId(20)</p>
+     * @param Index [in] {@code Integer}
      */
     @ComMethod(name = "Remove", dispId = 0x8)
     Object Remove(Integer Index);
@@ -118,6 +143,7 @@ public interface IVector extends IUnknown, IRawDispatchHandle, IDispatch {
      * Removes all elements.
      *
      * <p>id(0x9)</p>
+     * <p>vtableId(21)</p>
      */
     @ComMethod(name = "Clear", dispId = 0x9)
     void Clear();
@@ -126,6 +152,10 @@ public interface IVector extends IUnknown, IRawDispatchHandle, IDispatch {
      * Stores the string Value into the Vector of Bytes including the NULL terminator. Value may be truncated unless Resizable is True. The string will be stored as an ANSI string unless Unicode is True, in which case it will be stored as a Unicode string.
      *
      * <p>id(0xa)</p>
+     * <p>vtableId(22)</p>
+     * @param Value [in] {@code String}
+     * @param Resizable [in, optional] {@code Boolean}
+     * @param Unicode [in, optional] {@code Boolean}
      */
     @ComMethod(name = "SetFromString", dispId = 0xa)
     void SetFromString(String Value,

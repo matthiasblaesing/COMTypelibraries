@@ -18,6 +18,9 @@ public interface _IDeviceManagerEvents extends IUnknown, IRawDispatchHandle, IDi
      * Occurs for any event registered with RegisterEvent
      *
      * <p>id(0x1)</p>
+     * @param EventID [in] {@code String}
+     * @param DeviceID [in] {@code String}
+     * @param ItemID [in] {@code String}
      */
     @ComMethod(name = "OnEvent", dispId = 0x1)
     com.sun.jna.platform.win32.WinNT.HRESULT OnEvent(String EventID,

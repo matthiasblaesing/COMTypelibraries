@@ -16,24 +16,30 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IRTD extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x8c0)</p>
+     * <p>vtableId(7)</p>
+     * @param RHS [out] {@code Integer}
      */
     @ComProperty(name = "ThrottleInterval", dispId = 0x8c0)
     com.sun.jna.platform.win32.WinNT.HRESULT getThrottleInterval(VARIANT RHS);
             
     /**
      * <p>id(0x8c0)</p>
+     * <p>vtableId(8)</p>
+     * @param RHS [in] {@code Integer}
      */
     @ComProperty(name = "ThrottleInterval", dispId = 0x8c0)
     com.sun.jna.platform.win32.WinNT.HRESULT setThrottleInterval(Integer RHS);
             
     /**
      * <p>id(0x8c1)</p>
+     * <p>vtableId(9)</p>
      */
     @ComMethod(name = "RefreshData", dispId = 0x8c1)
     com.sun.jna.platform.win32.WinNT.HRESULT RefreshData();
             
     /**
      * <p>id(0x8c2)</p>
+     * <p>vtableId(10)</p>
      */
     @ComMethod(name = "RestartServers", dispId = 0x8c2)
     com.sun.jna.platform.win32.WinNT.HRESULT RestartServers();

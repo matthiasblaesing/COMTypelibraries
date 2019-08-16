@@ -16,6 +16,8 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface ICustomTaskPaneConsumer extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
+     * @param CTPFactoryInst [in] {@code ICTPFactory}
      */
     @ComMethod(name = "CTPFactoryAvailable", dispId = 0x1)
     void CTPFactoryAvailable(ICTPFactory CTPFactoryInst);

@@ -28,6 +28,8 @@ public interface ExplorerEvents extends IUnknown, IRawDispatchHandle, IDispatch 
             
     /**
      * <p>id(0xf003)</p>
+     * @param NewFolder [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeFolderSwitch", dispId = 0xf003)
     void BeforeFolderSwitch(com.sun.jna.platform.win32.COM.util.IDispatch NewFolder,
@@ -41,6 +43,8 @@ public interface ExplorerEvents extends IUnknown, IRawDispatchHandle, IDispatch 
             
     /**
      * <p>id(0xf005)</p>
+     * @param NewView [in] {@code Object}
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeViewSwitch", dispId = 0xf005)
     void BeforeViewSwitch(Object NewView,

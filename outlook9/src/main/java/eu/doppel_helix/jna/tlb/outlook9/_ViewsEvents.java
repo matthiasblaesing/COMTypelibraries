@@ -16,12 +16,14 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface _ViewsEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x190)</p>
+     * @param View [in] {@code View}
      */
     @ComMethod(name = "ViewAdd", dispId = 0x190)
     void ViewAdd(View View);
             
     /**
      * <p>id(0xfa47)</p>
+     * @param View [in] {@code View}
      */
     @ComMethod(name = "ViewRemove", dispId = 0xfa47)
     void ViewRemove(View View);

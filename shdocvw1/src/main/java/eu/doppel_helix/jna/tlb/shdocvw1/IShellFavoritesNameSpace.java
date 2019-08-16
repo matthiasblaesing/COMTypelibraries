@@ -84,6 +84,7 @@ public interface IShellFavoritesNameSpace extends IUnknown, IRawDispatchHandle, 
      *
      * <p>id(0x8)</p>
      * <p>vtableId(14)</p>
+     * @param strCommand [in] {@code String}
      */
     @ComMethod(name = "InvokeContextMenuCommand", dispId = 0x8)
     void InvokeContextMenuCommand(String strCommand);
@@ -129,6 +130,7 @@ public interface IShellFavoritesNameSpace extends IUnknown, IRawDispatchHandle, 
      *
      * <p>id(0xd)</p>
      * <p>vtableId(19)</p>
+     * @param bstrFullPath [in] {@code String}
      */
     @ComMethod(name = "SetRoot", dispId = 0xd)
     void SetRoot(String bstrFullPath);

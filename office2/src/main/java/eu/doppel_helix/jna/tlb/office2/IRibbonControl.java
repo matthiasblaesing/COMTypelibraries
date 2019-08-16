@@ -16,18 +16,21 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface IRibbonControl extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Id", dispId = 0x1)
     String getId();
             
     /**
      * <p>id(0x2)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Context", dispId = 0x2)
     com.sun.jna.platform.win32.COM.util.IDispatch getContext();
             
     /**
      * <p>id(0x3)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Tag", dispId = 0x3)
     String getTag();

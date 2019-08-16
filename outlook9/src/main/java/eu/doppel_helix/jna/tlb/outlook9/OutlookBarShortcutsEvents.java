@@ -16,18 +16,22 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface OutlookBarShortcutsEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xf001)</p>
+     * @param NewShortcut [in] {@code OutlookBarShortcut}
      */
     @ComMethod(name = "ShortcutAdd", dispId = 0xf001)
     void ShortcutAdd(OutlookBarShortcut NewShortcut);
             
     /**
      * <p>id(0xf002)</p>
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeShortcutAdd", dispId = 0xf002)
     void BeforeShortcutAdd(VARIANT Cancel);
             
     /**
      * <p>id(0xf003)</p>
+     * @param Shortcut [in] {@code OutlookBarShortcut}
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "BeforeShortcutRemove", dispId = 0xf003)
     void BeforeShortcutRemove(OutlookBarShortcut Shortcut,

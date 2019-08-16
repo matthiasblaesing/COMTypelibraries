@@ -16,12 +16,14 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface _dispReferencesEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0x1)</p>
+     * @param Reference [in] {@code Reference}
      */
     @ComMethod(name = "ItemAdded", dispId = 0x1)
     void ItemAdded(Reference Reference);
             
     /**
      * <p>id(0x2)</p>
+     * @param Reference [in] {@code Reference}
      */
     @ComMethod(name = "ItemRemoved", dispId = 0x2)
     void ItemRemoved(Reference Reference);

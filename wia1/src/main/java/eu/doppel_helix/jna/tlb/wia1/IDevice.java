@@ -18,6 +18,7 @@ public interface IDevice extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the DeviceID for this Device
      *
      * <p>id(0x1)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "DeviceID", dispId = 0x1)
     String getDeviceID();
@@ -26,6 +27,7 @@ public interface IDevice extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the Type of Device
      *
      * <p>id(0x2)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Type", dispId = 0x2)
     WiaDeviceType getType();
@@ -34,6 +36,7 @@ public interface IDevice extends IUnknown, IRawDispatchHandle, IDispatch {
      * A collection of all properties for this imaging device
      *
      * <p>id(0x3)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Properties", dispId = 0x3)
     IProperties getProperties();
@@ -42,6 +45,7 @@ public interface IDevice extends IUnknown, IRawDispatchHandle, IDispatch {
      * A collection of all items for this imaging device
      *
      * <p>id(0x4)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Items", dispId = 0x4)
     IItems getItems();
@@ -50,6 +54,7 @@ public interface IDevice extends IUnknown, IRawDispatchHandle, IDispatch {
      * A collection of all commands for this imaging device
      *
      * <p>id(0x5)</p>
+     * <p>vtableId(11)</p>
      */
     @ComProperty(name = "Commands", dispId = 0x5)
     IDeviceCommands getCommands();
@@ -58,6 +63,7 @@ public interface IDevice extends IUnknown, IRawDispatchHandle, IDispatch {
      * A collection of all events for this imaging device
      *
      * <p>id(0x6)</p>
+     * <p>vtableId(12)</p>
      */
     @ComProperty(name = "Events", dispId = 0x6)
     IDeviceEvents getEvents();
@@ -66,6 +72,7 @@ public interface IDevice extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the underlying IWiaItem interface for this Device object
      *
      * <p>id(0x7)</p>
+     * <p>vtableId(13)</p>
      */
     @ComProperty(name = "WiaItem", dispId = 0x7)
     com.sun.jna.platform.win32.COM.util.IUnknown getWiaItem();
@@ -74,6 +81,8 @@ public interface IDevice extends IUnknown, IRawDispatchHandle, IDispatch {
      * Returns the Item object specified by ItemID if it exists
      *
      * <p>id(0x8)</p>
+     * <p>vtableId(14)</p>
+     * @param ItemID [in] {@code String}
      */
     @ComMethod(name = "GetItem", dispId = 0x8)
     IItem GetItem(String ItemID);
@@ -82,6 +91,8 @@ public interface IDevice extends IUnknown, IRawDispatchHandle, IDispatch {
      * Issues the command specified by CommandID to the imaging device. CommandIDs are device dependent. Valid CommandIDs for this Device are contained in the Commands collection.
      *
      * <p>id(0x9)</p>
+     * <p>vtableId(15)</p>
+     * @param CommandID [in] {@code String}
      */
     @ComMethod(name = "ExecuteCommand", dispId = 0x9)
     IItem ExecuteCommand(String CommandID);

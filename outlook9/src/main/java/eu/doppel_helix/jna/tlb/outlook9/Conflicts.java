@@ -16,60 +16,71 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface Conflicts extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xf000)</p>
+     * <p>vtableId(7)</p>
      */
     @ComProperty(name = "Application", dispId = 0xf000)
     _Application getApplication();
             
     /**
      * <p>id(0xf00a)</p>
+     * <p>vtableId(8)</p>
      */
     @ComProperty(name = "Class", dispId = 0xf00a)
     OlObjectClass get_Class();
             
     /**
      * <p>id(0xf00b)</p>
+     * <p>vtableId(9)</p>
      */
     @ComProperty(name = "Session", dispId = 0xf00b)
     _NameSpace getSession();
             
     /**
      * <p>id(0xf001)</p>
+     * <p>vtableId(10)</p>
      */
     @ComProperty(name = "Parent", dispId = 0xf001)
     com.sun.jna.platform.win32.COM.util.IDispatch getParent();
             
     /**
      * <p>id(0x50)</p>
+     * <p>vtableId(11)</p>
      */
     @ComProperty(name = "Count", dispId = 0x50)
     Integer getCount();
             
     /**
      * <p>id(0x51)</p>
+     * <p>vtableId(12)</p>
+     * @param Index [in] {@code Object}
      */
     @ComMethod(name = "Item", dispId = 0x51)
     Conflict Item(Object Index);
             
     /**
      * <p>id(0x56)</p>
+     * <p>vtableId(13)</p>
      */
     @ComMethod(name = "GetFirst", dispId = 0x56)
     Conflict GetFirst();
             
     /**
      * <p>id(0x58)</p>
+     * <p>vtableId(14)</p>
      */
     @ComMethod(name = "GetLast", dispId = 0x58)
     Conflict GetLast();
             
     /**
      * <p>id(0x57)</p>
+     * <p>vtableId(15)</p>
      */
     @ComMethod(name = "GetNext", dispId = 0x57)
     Conflict GetNext();
             
     /**
      * <p>id(0x59)</p>
+     * <p>vtableId(16)</p>
      */
     @ComMethod(name = "GetPrevious", dispId = 0x59)
     Conflict GetPrevious();

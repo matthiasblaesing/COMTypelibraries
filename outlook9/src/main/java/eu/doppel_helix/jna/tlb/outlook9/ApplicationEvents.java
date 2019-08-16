@@ -16,6 +16,8 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 public interface ApplicationEvents extends IUnknown, IRawDispatchHandle, IDispatch {
     /**
      * <p>id(0xf002)</p>
+     * @param Item [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
+     * @param Cancel [inout] {@code Boolean}
      */
     @ComMethod(name = "ItemSend", dispId = 0xf002)
     void ItemSend(com.sun.jna.platform.win32.COM.util.IDispatch Item,
@@ -29,12 +31,14 @@ public interface ApplicationEvents extends IUnknown, IRawDispatchHandle, IDispat
             
     /**
      * <p>id(0xf004)</p>
+     * @param Item [in] {@code com.sun.jna.platform.win32.COM.util.IDispatch}
      */
     @ComMethod(name = "Reminder", dispId = 0xf004)
     void Reminder(com.sun.jna.platform.win32.COM.util.IDispatch Item);
             
     /**
      * <p>id(0xf005)</p>
+     * @param Pages [in] {@code PropertyPages}
      */
     @ComMethod(name = "OptionsPagesAdd", dispId = 0xf005)
     void OptionsPagesAdd(PropertyPages Pages);
