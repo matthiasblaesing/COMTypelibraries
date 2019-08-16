@@ -14,10 +14,24 @@ not functional.
 Usage
 -----
 
+You need to build this from source - run:
+
+```
+mvn install
+```
+
+This will publish the bindings into your local repository. If you run an
+orginsation repository, you can add the distribution information to the parent
+pom file located beside this file and then this should work:
+
+```
+mvn deploy
+```
+
 Add the typelibrary to the dependencies of the project and make sure the JNA
 and JNA platform libraries are present in a version 4.3.0-SNAPSHOT or newer.
 
-See: 
+See:
 
  * [Excel Automation](https://github.com/java-native-access/jna/blob/master/contrib/msoffice/src/com/sun/jna/platform/win32/COM/util/office/Excelautomation_KB_219151_Mod.java)
  * [Word Automation](https://github.com/java-native-access/jna/blob/master/contrib/msoffice/src/com/sun/jna/platform/win32/COM/util/office/Wordautomation_KB_313193_Mod.java)
