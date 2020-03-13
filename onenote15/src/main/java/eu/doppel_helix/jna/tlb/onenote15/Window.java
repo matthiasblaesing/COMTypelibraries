@@ -127,5 +127,4 @@ public interface Window extends IUnknown, IRawDispatchHandle, IDispatch {
      */
     @ComMethod(name = "NavigateToUrl", dispId = 0x10)
     void NavigateToUrl(String bstrUrl);
-
 }
